@@ -58,12 +58,12 @@
 body {
     height: 100vh;
     width: 100%;
-    background-color: rgb(15, 29, 29);
+    background-color: rgb(38, 61, 61);
 }
 
 /*boton de menu*/
 
-.menu{
+.menu {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -77,11 +77,13 @@ body {
     color: var(--color-boton-texto);
     right: 25px;
     top: 15px;
+    z-index: 100;
 
 }
 
 /*barra lateral*/
 .barra-lateral {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,7 +92,8 @@ body {
     overflow: hidden;
     padding: 20px 15px;
     background-color: var(--color-barra-lateral);
-    transition: width 0.5s ease, background-color 0.3s ease;
+    transition: width 0.5s ease, background-color 0.3s ease, left 0.5s ease;
+    z-index: 50;
 }
 
 .mini-barra-lateral {
@@ -272,26 +275,61 @@ body {
 
 }
 
+
+/*-- la siguiente clase debe de ir en cada boton segun la pagina, en este caso sera el boton de la casita porque es la pagina inicial*/
+#botoncasita{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+/*para alinear el futuro contenido de la pagina, se le debera añadir un margin-left de 250px y un padding de 20px*/
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+}
+
+main.min-main {
+    margin-left: 80px;
+}
+
 /*resposive*/
 
-@media (max-height : 660px){
-    .barra-lateral .nombre-pagina{
+@media (max-height : 660px) {
+    .barra-lateral .nombre-pagina {
         margin-bottom: 5px;
     }
-    .barra-lateral .modo-oscuro{
+
+    .barra-lateral .modo-oscuro {
         margin-bottom: 3px;
     }
 }
 
-@media (max-width: 600px){
-    .barra-lateral{
-        position: absolute;
+@media (max-width: 600px) {
+    .barra-lateral {
+        position: fixed;
         left: -250px;
 
     }
-    .menu{
+
+    .max-barra-lateral {
+        left: 0;
+    }
+
+    .menu {
         display: flex;
     }
 
-
+    .menu ion-icon:nth-child(2) {
+        display: none;
     }
+
+    main {
+        margin-left: 0;
+    }
+
+    main.min-main {
+        margin-left: 0;
+    }
+
+}
