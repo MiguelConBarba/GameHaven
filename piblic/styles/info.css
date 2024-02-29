@@ -1,0 +1,59 @@
+.Game-Haven{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: right;
+}
+
+.Info-Haven{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-Haven{
+    display: flex;
+    max-width: 900px;
+    width: 70%;
+    text-align: left;
+    align-items: center;
+}
+
+.contenido-Haven img{
+    max-width: 120%;
+    height: 120%;
+    margin-right: 20%; 
+    margin-left: 10%;
+}
+
+.text-content{
+    max-width: 50%;
+}
+
+.text-content h2{
+    color: #fbff04; 
+    font-size: 35px;
+}
+
+.text-content p{
+    color: #ececec; 
+    font-size: 20px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
