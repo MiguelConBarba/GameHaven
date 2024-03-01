@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Haven</title>
+    <link rel="stylesheet" href="../piblic/styles/barranav.css">
+    <link rel="stylesheet" href="../piblic/styles/buscador.css">
+    <link rel="stylesheet" href="../piblic/styles/catalogo.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="cloud" name="cloud-outline"></ion-icon>
+                <span>titulo</span>
+            </div>
+
+
+            <button class="boton">
+                <ion-icon name="search-outline"></ion-icon>
+                <span>create new</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                        <span>contactanos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                        <span>contactanos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="copy-outline"></ion-icon>
+                        <span>catalogo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span>carrito</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--colocar usuario dentro del div de abajo-->
+
+        <div>
+            <div class="linea"></div>
+
+            <div class="modo-oscuro">
+
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--catalogo:-->
+
+    <section class="contenido">
+        <main></main>
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/1.png" alt="">
+                    </div>
+                    <p class="descripcion">producto</p>
+                    <span class="precio">$ </span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/2.png" alt="">
+                    </div>
+                    <p class="descripcion" id>producto </p>
+                    <span class="precio">$</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/3.png" alt="">
+                    </div>
+                    <p class="descripcion">producto
+                    </p>
+                    <span class="precio">$</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/4.png" alt="">
+                    </div>
+                    <p class="descripcion">producto</p>
+                    <span class="precio">$</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/5.png" alt="">
+                    </div>
+                    <p class="descripcion">producto</p>
+                    <span class="precio">$</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/6.png" alt="">
+                    </div>
+                    <p class="descripcion">producto</p>
+                    <span class="precio">$</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/7.png" alt="">
+                    </div>
+                    <p class="descripcion">producto</p>
+                    <span class="precio">$</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/8.png" alt="">
+                    </div>
+                    <p class="descripcion">producto</p>
+                    <span class="precio">$</span>
+                </div>
+            </div>
+        </div>
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                <ion-icon id="close" name="close-outline"></ion-icon>
+            </div>
+            <div class="infoB">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">producto</h2>
+                <p id="descripcion">Descripción</p>
+
+                <span class="precio" id="precio">$</span>
+
+                <div class="fila">
+                    <button><ion-icon name="cart"></ion-icon>-- añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../piblic/script/menudesplegable.js"></script>
+    <script src="../piblic/script/catalogo.js"></script>
+</body>
+
+</html>
