@@ -8,7 +8,8 @@ let precioSeleccionado = document.getElementById("precio");
 function cargar(item) {
     quitarBordes();
     mostrador.style.width = "60%";
-    seleccion.style.width = "40%";
+    seleccion.style.width = "750px";
+    seleccion.style.height = "500px";
     seleccion.style.opacity = "1";
     item.style.border = "2px solid #73f851";
 
@@ -31,6 +32,6 @@ function cerrar() {
 function quitarBordes() {
     var items = document.getElementsByClassName("item");
     for (i = 0; i < items.length; i++) {
-        items[i].style.border = "none";
+        items[i].style.border = "solid #e8ffe634";
     }
 }
