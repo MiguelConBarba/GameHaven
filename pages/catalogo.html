@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="../piblic/styles/barranav.css">
     <link rel="stylesheet" href="../piblic/styles/buscador.css">
     <link rel="stylesheet" href="../piblic/styles/catalogo.css">
+    <link rel="stylesheet" href="../piblic/styles/slider.css">
+
+    <link rel="icon" href="../piblic/img/logo_sin_letra.png">
 </head>
 
 <body>
     <div class="menu">
+        <ion-icon name="close-outline"></ion-icon>
         <ion-icon name="menu-outline"></ion-icon>
     </div>
 
     <div class="barra-lateral">
         <div>
             <div class="nombre-pagina">
-                <ion-icon id="cloud" name="cloud-outline"></ion-icon>
+                <ion-icon id="logo_menu" name="menu-outline"></ion-icon>
                 <span>titulo</span>
             </div>
 
@@ -32,22 +36,26 @@
         <nav class="navegacion">
             <ul>
                 <li>
-                    <a href="#">
-                        <ion-icon name="mail-open-outline"></ion-icon>
-                        <span>contactanos</span>
+                    <a href="../index.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>inicio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <ion-icon name="mail-open-outline"></ion-icon>
-                        <span>contactanos</span>
-                    </a>
-                </li>
-                <li>
+                   
                     <a href="#">
                         <ion-icon name="copy-outline"></ion-icon>
                         <span>catalogo</span>
                     </a>
+                   
+                </li>
+                <li>
+                   
+                    <a href="buzon.html">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                        <span>contactanos</span>
+                    </a>
+
                 </li>
                 <li>
                     <a href="#">
@@ -81,72 +89,124 @@
 
     </div>
 
+        <!--S_L_I_D_E_R:-->
+
+        <section class="slide-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slider1" src="../piblic/img/WhatsApp Image 2024-03-12 at 6.58.05 PM (1).jpeg" alt="">
+                    <img id="slider2" src="../piblic/img/halo inifnite.jpg" alt="">
+                    <img id="slider3" src="../piblic/img/fb-share.jpg" alt="">
+                    <img id="slider4" src="../piblic/img/final-fantasy-7-rebirth-review-1.jpg" alt="">
+                    <img id="slider5" src="../piblic/img/devil maycry 5.jpg" alt="">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slider1"></a>
+                    <a href="#slider2"></a>
+                    <a href="#slider3"></a>
+                    <a href="#slider4"></a>
+                    <a href="#slider5"></a>
+                </div>
+            </div>
+        </section>
+
     <!--catalogo:-->
 
     <section class="contenido">
-        <main></main>
+        <main>
+            <div class="container">
+                <input type="text" placeholder="Buscar">
+                <div class="btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+        </main>
         <div class="mostrador" id="mostrador">
             <div class="fila">
                 <div class="item" onclick="cargar(this)">
                     <div class="contenedor-foto">
-                        <img src="img/1.png" alt="">
+                        <img src="../piblic/img/catalogo img/Assasins creed ps4.jpg" alt="">
                     </div>
-                    <p class="descripcion">producto</p>
-                    <span class="precio">$ </span>
+                    <p class="descripcion">Assasin`s Creed Valhalla</p>
+                    <span class="precio">$20.00</span>
+                    <h4></h4>
                 </div>
                 <div class="item" onclick="cargar(this)">
                     <div class="contenedor-foto">
-                        <img src="img/2.png" alt="">
+                        <img src="../piblic/img/catalogo img/ps5 fc24.jpg" alt="">
                     </div>
-                    <p class="descripcion" id>producto </p>
-                    <span class="precio">$</span>
+                    <p class="descripcion" id>FC24 - PS5</p>
+                    <span class="precio">$20.00</span>
+                    <h4>Impulsando el mayor avance en autenticidad y realismo del juego hasta la fecha, HyperMotionV
+                        traduce el ritmo y la
+                        fluidez del fútbol del mundo real en The World's Game utilizando datos volumétricos de más de
+                        180 partidos de primer
+                        nivel de competiciones como la Liga de Campeones masculina y femenina de la UEFA. Premier League
+                        y LaLiga EA SPORTS</h4>
                 </div>
                 <div class="item" onclick="cargar(this)">
                     <div class="contenedor-foto">
-                        <img src="img/3.png" alt="">
+                        <img src="../piblic/img/catalogo img/GTA5 ps4.jpg" alt="">
                     </div>
-                    <p class="descripcion">producto
-                    </p>
-                    <span class="precio">$</span>
+                    <p class="descripcion">Grand Thef Auto V premium edition - PS4</p>
+                    <span class="precio">$20.00</span>
+                    <h4></h4>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/pc 1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CYBERPOWERPC PC gaming</p>
+                    <span class="precio">$ 2,600.00 </span>
+                    <h4>Sistema: Procesador Intel Core i7-12700K (12 núcleos)| Placa base con chipset Intel Z790 | de
+                        1TB
+                        Gráficos: super graphics Nvidia GeForce RTX 4080.</h4>
+                </div>
+
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/pc 2.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Wyvern Gaming PC</p>
+                    <span class="precio">$1,000.00</span>
+                    <h4>Intel Core i5-13400F, 16GB, 1TB SSD, NVIDIA GeForce RTX 3060, Windows 11, Black</h4>
                 </div>
                 <div class="item" onclick="cargar(this)">
                     <div class="contenedor-foto">
-                        <img src="img/4.png" alt="">
+                        <img src="img/6.png" alt="">
                     </div>
-                    <p class="descripcion">producto</p>
+                    <p class="descripcion">producto 6</p>
                     <span class="precio">$</span>
                 </div>
             </div>
             <div class="fila">
                 <div class="item" onclick="cargar(this)">
                     <div class="contenedor-foto">
-                        <img src="img/5.png" alt="">
-                    </div>
-                    <p class="descripcion">producto</p>
-                    <span class="precio">$</span>
-                </div>
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="img/6.png" alt="">
-                    </div>
-                    <p class="descripcion">producto</p>
-                    <span class="precio">$</span>
-                </div>
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
                         <img src="img/7.png" alt="">
                     </div>
-                    <p class="descripcion">producto</p>
+                    <p class="descripcion">producto 7</p>
                     <span class="precio">$</span>
                 </div>
                 <div class="item" onclick="cargar(this)">
                     <div class="contenedor-foto">
                         <img src="img/8.png" alt="">
                     </div>
-                    <p class="descripcion">producto</p>
+                    <p class="descripcion">producto 8</p>
+                    <span class="precio">$</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/9.png" alt="">
+                    </div>
+                    <p class="descripcion">producto 9</p>
                     <span class="precio">$</span>
                 </div>
             </div>
+
+
         </div>
         <div class="seleccion" id="seleccion">
             <div class="cerrar" onclick="cerrar()">
@@ -155,16 +215,16 @@
             <div class="infoB">
                 <img src="img/1.png" alt="" id="img">
                 <h2 id="modelo">producto</h2>
+                <span class="precio" id="precio">$</span>
                 <p id="descripcion">Descripción</p>
 
-                <span class="precio" id="precio">$</span>
-
                 <div class="fila">
-                    <button><ion-icon name="cart"></ion-icon>-- añadir al carrito</button>
+                    <button id="addcart"><ion-icon name="cart"></ion-icon>-- añadir al carrito</button>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
