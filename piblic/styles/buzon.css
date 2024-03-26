@@ -105,3 +105,38 @@ textarea{
     transition: 0.5s;
 }
 
+video {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media(max-width: 991px){
+
+    section.formluario{
+        padding: 30px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .form-group {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        background-color: #59bd3b;
+    }
+
+    textarea{
+        margin-bottom: 30px;
+    }
+
+}
