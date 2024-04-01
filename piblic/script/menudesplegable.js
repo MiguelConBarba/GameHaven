@@ -5,7 +5,7 @@ const spans = document.querySelectorAll("span");
 const palanca = document.querySelector(".switch");
 const circulo = document.querySelector(".circulo");
 const menu = document.querySelector(".menu");
-const main = document.querySelector("main");
+const main = document.querySelectorAll("main");
 
 main
 
@@ -25,10 +25,14 @@ menu.addEventListener("click",()=>{
 
     if(window.innerWidth<=320){
         barralateral.classList.add("mini-barra-lateral");
-        main.classList.add("min-main");
+        main.forEach((element)=>{
+            element.classList.add("min-main");
+        })
         spans.forEach((span)=>{
             span.classList.add("oculto");
         })
+        let sliderName=window.location.href.split("#")[1];
+        window.location="#"+sliderName
     }
 });
 
@@ -42,10 +46,15 @@ palanca.addEventListener("click",()=>{
 
 logo_menu.addEventListener("click",()=>{
     barralateral.classList.toggle("mini-barra-lateral");
-    main.classList.toggle("min-main");
+    console.log(window.location.href)
+    main.forEach((element)=>{
+        element.classList.toggle("min-main");
+    })
     spans.forEach((span)=>{
         span.classList.toggle("oculto");
     });
+    let sliderName=window.location.href.split("#")[1];
+    window.location="#slider1"
 });
 
 
