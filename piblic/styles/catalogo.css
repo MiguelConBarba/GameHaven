@@ -158,3 +158,17 @@
     font-size: 0.1px;
     color: #e8ffe600;
 }
+
+.fila1 img {
+    max-width: 214px;
+    max-height: 298px;
+    min-width: 133px;
+    min-height: 173px;
+}
+
+.fila2 img {
+    max-width: 250px;
+    max-height: 302px;
+    min-width: 133px;
+    min-height: 173px;
+}

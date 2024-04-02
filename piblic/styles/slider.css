@@ -15,8 +15,10 @@
 
     position: relative;
     width: 100%;
-    margin: 10px;
+    margin: 30px 10px 10px 10px;
     height: 100%;
+    justify-content: center;
+    display: flex;
 }
 
 
@@ -25,7 +27,7 @@
 
     display: flex;
     overflow-x: hidden;
-    width: 100%;
+    width: 80%;
     scroll-behavior: smooth;
     flex-wrap: nowrap;
     box-shadow: 0.25rem .5rem 10px;
@@ -37,21 +39,20 @@
 
 
 .slider img {
-
-
+    animation: slide 15s infinite;
     object-fit: cover;
     z-index: 2;
     height: 100%;
 }
 
-.text-slider{
+.text-slider {
     position: relative;
     width: 100%;
     flex-shrink: 0;
     height: 100%;
 }
 
-.title{
+.title {
     background: rgba(5, 7, 12, 0.75);
     padding: 10px;
     z-index: 3;
@@ -59,66 +60,82 @@
     bottom: 0;
     width: 100%;
     text-align: center;
+    animation: slide 15s infinite;
 }
 
 
-.text-slider h2{
+.text-slider h2 {
     color: white;
-
     z-index: 1;
 }
 
-.text-slider p{
-
+.text-slider p {
     color: #73f851;
-
     font-size: 26px;
-  
 }
-.text-slider img{
-    width: 100%;
 
+.text-slider img {
+    width: 100%;
 }
 
 .slider-nav {
-
     display: flex;
-
     column-gap: 1rem;
-
     position: absolute;
-
     bottom: -1.25rem;
-
     left: 50%;
-
     transform: translateX(-50%);
-
     z-index: 1;
 }
 
-.slider-nav a {
-
+.slider-nav button {
     width: 12px;
-
     height: 12px;
-
     border: solid rgba(0, 0, 0) 2px;
-
     border-radius: 50%;
-
-    background-color: white;
-
-    opacity: .75;
-
-    transition: opacity ease 250ms;
-
+    background-color: rgb(255, 255, 255, 90%);
 }
 
-.slider-nav a:hover {
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
 
-    opacity: 1;
+    12.5% {
+        margin-left: 0%;
+    }
+
+    17.5% {
+        margin-left: -100%;
+    }
+
+    30% {
+        margin-left: -100%;
+    }
+
+    35% {
+        margin-left: -200%;
+    }
+
+    47.5% {
+        margin-left: -200%;
+    }
+
+    52.5% {
+        margin-left: -300%;
+    }
+
+    65% {
+        margin-left: -300%;
+    }
+
+    70% {
+        margin-left: -400%;
+    }
+
+    82.5% {
+        margin-left: -400%;
+    }
+
 
 }
-
-
