@@ -76,7 +76,7 @@ body {
     background-color: var(--color-boton);
     color: var(--color-boton-texto);
     right: 25px;
-    top: 15px;
+    top: 0px;
     z-index: 100;
 
 }
@@ -94,6 +94,7 @@ body {
     background-color: var(--color-barra-lateral);
     transition: width 0.5s ease, background-color 0.3s ease, left 0.5s ease;
     z-index: 50;
+    top:0px;
 }
 
 .mini-barra-lateral {
@@ -277,10 +278,11 @@ body {
 
 
 /*-- la siguiente clase debe de ir en cada boton segun la pagina, en este caso sera el boton de la casita porque es la pagina inicial*/
-#botoncasita{
+#botoncasita {
     background-color: var(--color-menu-hover);
     color: var(--color-menu-hover-texto);
 }
+
 /*para alinear el futuro contenido de la pagina, se le debera añadir un margin-left de 250px y un padding de 20px*/
 
 main {

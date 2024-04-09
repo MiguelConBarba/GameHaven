@@ -9,35 +9,39 @@
 .mostrador {
     width: 100%;
     transition: .5s ease;
+
 }
 
 .mostrador .fila {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin: 40px 40px 8vmax 0;
+
 
 }
 
 .mostrador .fila .item {
-    max-width: 210px;
+    max-width: 300px;
     padding: 30px;
-    height: 250px;
+    height: 450px;
     text-align: center;
     margin: 0 10px;
     cursor: pointer;
-    border: solid #e8ffe634 2px;
+    border: solid #e8ffe634 3px;
     border-radius: 15px;
     transition: .3s;
 }
 
 .mostrador .fila .item:hover {
     background-color: #e8ffe634;
+    transform: scale(5px);
+    transform: translateY(-10px);
 }
 
 .mostrador .fila .item img {
     width: 100%;
-    margin: 30px 0;
+    margin: 5px 0;
 }
 
 .mostrador .fila .item .descripcion {
@@ -55,16 +59,16 @@
     transition: .5s ease;
     opacity: 0;
     width: 0%;
-    min-height: 580px;
-    max-height: 900px;
+    min-height: 750px;
+    max-height: 1200px;
     border: 1px solid #73f851;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     overflow: hidden;
     border-radius: 15px;
     margin: 40px auto;
+    background-color: rgb(38, 61, 61);
 }
 
 .cerrar {
@@ -148,4 +152,9 @@
     height: 20px;
     width: 20px;
     margin: -.5px 0 0 -4px;
+}
+
+.item h4 {
+    font-size: 0.1px;
+    color: #e8ffe600;
 }
