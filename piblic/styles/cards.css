@@ -1,0 +1,78 @@
+section.cards{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: whitesmoke;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.cards img{
+    height: 500px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+section.cards div.container-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 400px;
+    margin-right: 400px;
+    bottom: 240px;
+}
+
+div.card{
+    height: 500px;
+    margin: 100px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+section.cards div.intro-card{
+    height: 200px;
+    width: 450px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27,27 ,27, 0.5);
+}
+
+div.intro-card h2,div.intro-card a,div.intro-card p{
+    background: rgb(27,27 ,27, 0.5);
+    color: aliceblue;
+}
+
+div.intro-card h2{
+    margin:10px;
+    font-size: 30px;
+}
+
+div.intro-card p{
+    margin: 10px;
+}
+
+div.intro-card a{
+    color: rgb(15, 165, 40);
+    text-decoration: none;
+}
+
+div.intro-card a:hover{
+    color: rgb(0, 255, 21);
+    transition: 0.3s;
+}
+
+div.container-cards div.card:hover{
+    cursor: pointer;
+}
+
+section.cards div.card div.intro-card{
+    border-bottom: 240;
+}
+
+div.texto-card{
+    bottom: 200px;
+    height: 200px;
+}
+
