@@ -116,6 +116,10 @@ body {
     width: 0;
 }
 
+.oculto{
+    visibility: hidden;
+}
+
 /*nombre de la pagina*/
 .barra-lateral .nombre-pagina {
     width: 100%;
@@ -148,7 +152,6 @@ body {
     justify-content: center;
     border: none;
     border-radius: 10px;
-    background-color: var(--color-boton);
     color: var(--color-boton-texto);
     transition: var(--transicion-boton);
 }

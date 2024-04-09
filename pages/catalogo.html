@@ -25,14 +25,11 @@
                 <ion-icon id="logo_menu" name="menu-outline"></ion-icon>
                 <span>titulo</span>
             </div>
-
-
-            <button class="boton">
-                <ion-icon name="search-outline"></ion-icon>
-                <span>create new</span>
-            </button>
+            <div class="search-box">
+            <ion-icon name="search-outline"></ion-icon>
+            <input id="search" type="text" placeholder="Buscar">
+            </div>
         </div>
-
         <nav class="navegacion">
             <ul>
                 <li>
@@ -149,118 +146,116 @@
 
     <section class="contenido">
         <main>
-            <div class="container">
-                <input type="text" placeholder="Buscar">
-                <div class="btn">
-                    <ion-icon name="search-outline"></ion-icon>
-                </div>
-            </div>
-        </main>
-        <div class="mostrador" id="mostrador">
-            <div class="fila fila1">
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="../piblic/img/catalogo img/Assasins creed ps4.jpg" alt="">
+
+            <div class="mostrador" id="mostrador">
+                <div class="fila fila1">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="../piblic/img/catalogo img/Assasins creed ps4.jpg" alt="">
+                        </div>
+                        <p class="descripcion">Assasin`s Creed Valhalla</p>
+                        <span class="precio">$20.00</span>
+                        <h4></h4>
                     </div>
-                    <p class="descripcion">Assasin`s Creed Valhalla</p>
-                    <span class="precio">$20.00</span>
-                    <h4></h4>
-                </div>
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="../piblic/img/catalogo img/ps5 fc24.jpg" alt="">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="../piblic/img/catalogo img/ps5 fc24.jpg" alt="">
+                        </div>
+                        <p class="descripcion" id>FC24 - PS5</p>
+                        <span class="precio">$20.00</span>
+                        <h4>Impulsando el mayor avance en autenticidad y realismo del juego hasta la fecha, HyperMotionV
+                            traduce el ritmo y la
+                            fluidez del fútbol del mundo real en The World's Game utilizando datos volumétricos de más
+                            de
+                            180 partidos de primer
+                            nivel de competiciones como la Liga de Campeones masculina y femenina de la UEFA. Premier
+                            League
+                            y LaLiga EA SPORTS</h4>
                     </div>
-                    <p class="descripcion" id>FC24 - PS5</p>
-                    <span class="precio">$20.00</span>
-                    <h4>Impulsando el mayor avance en autenticidad y realismo del juego hasta la fecha, HyperMotionV
-                        traduce el ritmo y la
-                        fluidez del fútbol del mundo real en The World's Game utilizando datos volumétricos de más de
-                        180 partidos de primer
-                        nivel de competiciones como la Liga de Campeones masculina y femenina de la UEFA. Premier League
-                        y LaLiga EA SPORTS</h4>
-                </div>
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="../piblic/img/catalogo img/GTA5 ps4.jpg" alt="">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="../piblic/img/catalogo img/GTA5 ps4.jpg" alt="">
+                        </div>
+                        <p class="descripcion">Grand Thef Auto V- PS4</p>
+                        <span class="precio">$20.00</span>
+                        <h4></h4>
                     </div>
-                    <p class="descripcion">Grand Thef Auto V- PS4</p>
-                    <span class="precio">$20.00</span>
-                    <h4></h4>
                 </div>
-            </div>
-            <div class="fila fila2">
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="../piblic/img/catalogo img/pc 1.jpg" alt="">
+                <div class="fila fila2">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="../piblic/img/catalogo img/pc 1.jpg" alt="">
+                        </div>
+                        <p class="descripcion">CYBERPOWERPC PC gaming</p>
+                        <span class="precio">$ 2,600.00 </span>
+                        <h4>Sistema: Procesador Intel Core i7-12700K (12 núcleos)| Placa base con chipset Intel Z790 |
+                            de
+                            1TB
+                            Gráficos: super graphics Nvidia GeForce RTX 4080.</h4>
                     </div>
-                    <p class="descripcion">CYBERPOWERPC PC gaming</p>
-                    <span class="precio">$ 2,600.00 </span>
-                    <h4>Sistema: Procesador Intel Core i7-12700K (12 núcleos)| Placa base con chipset Intel Z790 | de
-                        1TB
-                        Gráficos: super graphics Nvidia GeForce RTX 4080.</h4>
+
+
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="../piblic/img/catalogo img/pc 2.jpg" alt="">
+                        </div>
+                        <p class="descripcion">Wyvern Gaming PC</p>
+                        <span class="precio">$1,000.00</span>
+                        <h4>Intel Core i5-13400F, 16GB, 1TB SSD, NVIDIA GeForce RTX 3060, Windows 11, Black</h4>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="../piblic/img/catalogo img/pc3.jpg" alt="">
+                        </div>
+                        <p class="descripcion">Skytech Gaming PC</p>
+                        <span class="precio">$800.00</span>
+                        <h4>Intel Core i5 13400F 2.5 GHz, NVIDIA RTX 3050, 1TB NVME SSD, 16GB DDR4 RAM 3200, 600W Gold
+                            PSU,
+                            11AC Wi-Fi, Windows 11
+                            Home 64-bit</h4>
+                    </div>
+                </div>
+                <div class="fila fila3">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/7.png" alt="">
+                        </div>
+                        <p class="descripcion">producto 7</p>
+                        <span class="precio">$</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/8.png" alt="">
+                        </div>
+                        <p class="descripcion">producto 8</p>
+                        <span class="precio">$</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/9.png" alt="">
+                        </div>
+                        <p class="descripcion">producto 9</p>
+                        <span class="precio">$</span>
+                    </div>
                 </div>
 
 
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="../piblic/img/catalogo img/pc 2.jpg" alt="">
-                    </div>
-                    <p class="descripcion">Wyvern Gaming PC</p>
-                    <span class="precio">$1,000.00</span>
-                    <h4>Intel Core i5-13400F, 16GB, 1TB SSD, NVIDIA GeForce RTX 3060, Windows 11, Black</h4>
-                </div>
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="../piblic/img/catalogo img/pc3.jpg" alt="">
-                    </div>
-                    <p class="descripcion">Skytech Gaming PC</p>
-                    <span class="precio">$800.00</span>
-                    <h4>Intel Core i5 13400F 2.5 GHz, NVIDIA RTX 3050, 1TB NVME SSD, 16GB DDR4 RAM 3200, 600W Gold PSU,
-                        11AC Wi-Fi, Windows 11
-                        Home 64-bit</h4>
-                </div>
             </div>
-            <div class="fila fila3">
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="img/7.png" alt="">
-                    </div>
-                    <p class="descripcion">producto 7</p>
-                    <span class="precio">$</span>
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    <ion-icon id="close" name="close-outline"></ion-icon>
                 </div>
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="img/8.png" alt="">
-                    </div>
-                    <p class="descripcion">producto 8</p>
-                    <span class="precio">$</span>
-                </div>
-                <div class="item" onclick="cargar(this)">
-                    <div class="contenedor-foto">
-                        <img src="img/9.png" alt="">
-                    </div>
-                    <p class="descripcion">producto 9</p>
-                    <span class="precio">$</span>
-                </div>
-            </div>
+                <div class="infoB">
+                    <img src="img/1.png" alt="" id="img">
+                    <h2 id="modelo">producto</h2>
+                    <span class="precio" id="precio">$</span>
+                    <p id="descripcion">Descripción</p>
 
-
-        </div>
-        <div class="seleccion" id="seleccion">
-            <div class="cerrar" onclick="cerrar()">
-                <ion-icon id="close" name="close-outline"></ion-icon>
-            </div>
-            <div class="infoB">
-                <img src="img/1.png" alt="" id="img">
-                <h2 id="modelo">producto</h2>
-                <span class="precio" id="precio">$</span>
-                <p id="descripcion">Descripción</p>
-
-                <div class="fila">
-                    <button id="addcart"><ion-icon name="cart"></ion-icon>-- añadir al carrito</button>
+                    <div class="fila">
+                        <button id="addcart"><ion-icon name="cart"></ion-icon>-- añadir al carrito</button>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
