@@ -1,54 +1,7 @@
-.container {
-    position: absolute;
-    left: 48%;
-}
-
-input {
-    outline: none;
-    box-sizing: border-box;
-    width: 0;
-    padding: 6px 19px 6px;
-    color: black;
-    border-radius: 50px;
-    font-size: 20px;
-    border: 1px solid rgb(37, 255, 30);
-    transition: all 1.5s ease;
-}
-
-::placeholder{
-    color: grey;
-} 
-
-.btn{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    background: rgb(37, 255, 30);
-    border-radius: 50px;
-    text-align: center;
+search-box{
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
     cursor: pointer;
-    transition: .2s;
-    
+    transition: var(--tran-o5);
 }
 
-.btn ion-icon{
-    font-size: 25px;
-    color: white;
-    margin: 8px 0;
-    transition: all .2 ease;
-}
-
-.container:hover input{
-    width: 350px;
-}
-
-.container:hover ion-icon{
-    transform: rotate(-360deg);
-    transition-duration: 3s;
-}
-
-.btn:hover{
-    background: rgb(0, 170, 28);
-}
