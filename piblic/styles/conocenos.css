@@ -1,0 +1,15 @@
+section.conocenos{
+    background-color: white;
+    margin-top: 20vh;
+    height: 100vh;
+    font-size: x-large;
+}
+
+section.conocenos div.conocenos-containe{
+    background-color: white;
+}
+
+div.pagos img{
+    width: 100px;
+    height: 50px;
+}
