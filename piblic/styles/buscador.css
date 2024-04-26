@@ -1,7 +1,57 @@
-search-box{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
+.continer{
+    position: absolute;
+    transition: translate(-50%,-50%);
+    padding: 10px;
+}
+
+input{
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 20px;
+    padding: 0 20px;
+    color: black;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 2px solid gray;
+    transition: all .7s ease;
+}
+
+::placeholder{
+    color: gray;
+}
+
+.btn{
+    position: absolute;
+    right: 50px;
+    left: 17px;
+    top: 69px;
+    width: 40px;
+    height: 40px;
+    background: grey;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
     cursor: pointer;
-    transition: var(--tran-o5);
+    transition: .5s;
+}
+
+.btn ion-ion{
+    font-size: 25px;
+    color: white;
+    line-height: 20px;
+    transition: all .7 ease;
+}
+
+.container:hover input{
+    width: 230px;
+}
+
+.container:hover ion-ion{
+    transform: rotate(- 360deg);
+}
+
+.btn:hover{
+    background: gray;
 }
 

@@ -8,8 +8,6 @@ const main = document.querySelectorAll("main");
 const search = document.getElementById("search");
 
 menu.addEventListener("click",()=>{
-    search.style.visibility = "hidden"
-
     barralateral.classList.toggle("max-barra-lateral");
     if(barralateral.classList.contains("max-barra-lateral")){
         menu.children[0].style.display ="block";
@@ -43,22 +41,20 @@ logo_menu.addEventListener("click", () => {
     // Toggle sidebar width and mini-main class on main elements
     barralateral.classList.toggle("mini-barra-lateral");
     main.forEach((element) => {
-      element.classList.toggle("min-main");
+        element.classList.toggle("min-main");
     });
-  
     // Toggle visibility of spans (possibly menu items)
     spans.forEach((span) => {
-      span.classList.toggle("oculto"); // "oculto" likely means "hidden"
+        span.classList.toggle("oculto"); // "oculto" likely means "hidden"
     });
-  
     // Get current page section from URL hash (if present)
     let sliderName = window.location.href.split("#")[1];
-  
     // Force navigation to a specific section (#slider1)
     window.location.hash = "#slider1";
-    search.style.visibility = "hidden"
-  });
-  
+
+window.innerWidth <= 320 ? search.style.visibility = "hidden" : null;
+    
+});
 
 
 
