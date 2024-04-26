@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: grid;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(50deg, rgba(31, 50, 51, 1) 0%, rgba(29, 48, 48, 1) 50%, rgb(28, 44, 44, 1) 100%);
+    padding: 50px;
+    width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    position: absolute;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+
+
+}
+
+input {
+        padding: 18px 12px;
+        background-color: #1f4a50;
+        border: 0;
+        outline: none;
+        border-radius: 25px;
+        color: #f5f5f5;
+        font-size: 16px;
+}
+button {
+        padding: 17px 15px;
+            width: 125px;
+            font-size: 16px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#togglePassword {
+    position: absolute;
+    margin-bottom: 48px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#togglePassword ion-icon {
+    color: #555;
+}
+
+#toggleConfirm {
+    position: absolute;
+    margin: 95px 0 ;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#toggleConfirm ion-icon {
+    color: #555;
+}
+
+.login {
+    bottom: 0;
+}
+
+.login a{
+    color: rgb(192, 192, 192);
+}
+
+.login a:visited{
+    color:white;
+}
+
+.login-eye{
+    margin: 55px 0;
+}
