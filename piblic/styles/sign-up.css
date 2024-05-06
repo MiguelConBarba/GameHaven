@@ -86,3 +86,14 @@ button {
 .login-eye{
     margin: 55px 0;
 }
+.iniciodesesion-btn button{
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    color: #f5f5f5;
+    background-color: #1ae016;
+}
+.iniciodesesion-btn button:hover{
+    background-color: #1a9618;
+}

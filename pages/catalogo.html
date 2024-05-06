@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Haven</title>
+    <link rel="icon" href="../piblic/img/logo img/logo_sin_letra.png">
     <link rel="stylesheet" href="../piblic/styles/barranav.css">
     <link rel="stylesheet" href="../piblic/styles/buscador.css">
     <link rel="stylesheet" href="../piblic/styles/catalogo.css">
@@ -23,10 +24,10 @@
         <div>
             <div class="nombre-pagina">
                 <ion-icon id="logo_menu" name="menu-outline"></ion-icon>
-                <span>titulo</span>
+                <span>Game Haven</span>
             </div>
             <div class="container">
-            <input type="text" placeholder="Buscar">
+            <input type="text" placeholder="..    Buscar">
             <div class="btn">
                 <ion-icon name="search-outline"></ion-icon>
             </div>
@@ -43,7 +44,7 @@
                 </li>
                 <li>
 
-                    <a href="#">
+                    <a href="catalogo.html">
                         <ion-icon name="copy-outline"></ion-icon>
                         <span>catalogo</span>
                     </a>
@@ -61,6 +62,18 @@
                     <a href="#">
                         <ion-icon name="cart-outline"></ion-icon>
                         <span>carrito</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sign-up.html">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                        <span>registrate</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="log-in.html">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <span>iniciar sesión</span>
                     </a>
                 </li>
             </ul>
@@ -103,35 +116,80 @@
                     <img src="../piblic/img/WhatsApp Image 2024-03-12 at 6.58.05 PM (1).jpeg" alt="">
                     <div class="title">
                         <h2>OVERWATCH</h2>
-                        <p>$12.99</p>
+                        <div class="precio-descuento">
+                            <a></a>
+                            <div class="both-prices">
+                                <p class="precio-anterior">20.00</p>
+                                <p class="precio-actual">$12.99</p>
+                            </div>
+                            <div class="prcnt-container">                             
+                                <p class="descuento-porcentaje">-35%</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="slider2" class="text-slider">
                     <img id="slider2" src="../piblic/img/halo inifnite.jpg" alt="">
                     <div class="title">
                         <h2>HALO: INFINITE</h2>
-                        <p>$12.99</p>
+                        <div class="precio-descuento">
+                            <a></a>
+                            <div class="both-prices">
+                                <p class="precio-anterior">20.00</p>
+                                <p class="precio-actual">$12.99</p>
+                            </div>
+                            <div class="prcnt-container">                             
+                                <p class="descuento-porcentaje">-35%</p>
+                            </div>
+                        </div>                   
                     </div>
                 </div>
                 <div id="slider3" class="text-slider">
                     <img id="slider3" src="../piblic/img/fb-share.jpg" alt="">
                     <div class="title">
                         <h2>STAR CRAFT 2</h2>
-                        <p>$12.99</p>
+                        <div class="precio-descuento">
+                            <a></a>
+                            <div class="both-prices">
+                                <p class="precio-anterior">20.00</p>
+                                <p class="precio-actual">$12.99</p>
+                            </div>
+                            <div class="prcnt-container">                             
+                                <p class="descuento-porcentaje">-35%</p>
+                            </div>
+                        </div>                    
                     </div>
                 </div>
                 <div id="slider4" class="text-slider">
                     <img id="slider4" src="../piblic/img/final-fantasy-7-rebirth-review-1.jpg" alt="">
                     <div class="title">
                         <h2>FINAL FANTASY VII</h2>
-                        <p>$12.99</p>
+                        <div class="precio-descuento">
+                            <a></a>
+                            <div class="both-prices">
+                                <p class="precio-anterior">20.00</p>
+                                <p class="precio-actual">$12.99</p>
+                            </div>
+                            <div class="prcnt-container">                             
+                                <p class="descuento-porcentaje">-35%</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="slider5" class="text-slider">
                     <img id="slider5" src="../piblic/img/devil maycry 5.jpg" alt="">
                     <div class="title">
                         <h2>DEVIL MAY CRY 5</h2>
-                        <p>$12.99</p>
+                        <div class="precio-descuento">
+                            <a></a>
+                            <div class="both-prices">
+                                <p class="precio-anterior">20.00</p>
+                                <p class="precio-actual">$12.99</p>
+                            </div>
+                            <div class="prcnt-container">                             
+                                <p class="descuento-porcentaje">-35%</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,105 +207,133 @@
 
     <section class="contenido">
         <main>
+
             <div class="mostrador" id="mostrador">
-                <div class="fila fila1">
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="../piblic/img/catalogo img/Assasins creed ps4.jpg" alt="">
-                        </div>
-                        <p class="descripcion">Assasin`s Creed Valhalla</p>
-                        <span class="precio">$20.00</span>
-                        <h4></h4>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/Assasins creed ps4.jpg" alt="">
                     </div>
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="../piblic/img/catalogo img/ps5 fc24.jpg" alt="">
-                        </div>
-                        <p class="descripcion" id>FC24 - PS5</p>
-                        <span class="precio">$20.00</span>
-                        <h4>Impulsando el mayor avance en autenticidad y realismo del juego hasta la fecha, HyperMotionV
-                            traduce el ritmo y la
-                            fluidez del fútbol del mundo real en The World's Game utilizando datos volumétricos de más
-                            de
-                            180 partidos de primer
-                            nivel de competiciones como la Liga de Campeones masculina y femenina de la UEFA. Premier
-                            League
-                            y LaLiga EA SPORTS</h4>
-                    </div>
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="../piblic/img/catalogo img/GTA5 ps4.jpg" alt="">
-                        </div>
-                        <p class="descripcion">Grand Thef Auto V- PS4</p>
-                        <span class="precio">$20.00</span>
-                        <h4></h4>
-                    </div>
+                    <p class="descripcion">Assasin`s Creed Valhalla</p>
+                    <span class="precio">$20.00</span>
+                    <h4></h4>
                 </div>
-                <div class="fila fila2">
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="../piblic/img/catalogo img/pc 1.jpg" alt="">
-                        </div>
-                        <p class="descripcion">CYBERPOWERPC PC gaming</p>
-                        <span class="precio">$ 2,600.00 </span>
-                        <h4>Sistema: Procesador Intel Core i7-12700K (12 núcleos)| Placa base con chipset Intel Z790 |
-                            de
-                            1TB
-                            Gráficos: super graphics Nvidia GeForce RTX 4080.</h4>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/ps5 fc24.jpg" alt="">
                     </div>
+                    <p class="descripcion" id>FC24 - PS5</p>
+                    <span class="precio">$20.00</span>
+                    <h4>Impulsando el mayor avance en autenticidad y realismo del juego hasta la fecha, HyperMotionV
+                        traduce el ritmo y la
+                        fluidez del fútbol del mundo real en The World's Game utilizando datos volumétricos de más
+                        de
+                        180 partidos de primer
+                        nivel de competiciones como la Liga de Campeones masculina y femenina de la UEFA. Premier
+                        League
+                        y LaLiga EA SPORTS</h4>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/GTA5 ps4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Grand Thef Auto V- PS4</p>
+                    <span class="precio">$20.00</span>
+                    <h4>¡Sumérgete en el emocionante mundo de Grand Theft Auto V! Experimenta la acción trepidante, los
+                        emocionantes atracos y
+                        la libertad de explorar la vibrante ciudad de Los Santos. Con gráficos impresionantes, una
+                        historia épica y un mundo
+                        abierto lleno de posibilidades, GTA V es una experiencia de juego inolvidable. ¡Únete a la
+                        diversión y descubre por qué
+                        este juego es uno de los favoritos de los fans en todo el mundo!</h4>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/pc 1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CYBERPOWERPC PC gaming</p>
+                    <span class="precio">$ 2,600.00 </span>
+                    <h4>Sistema: Procesador Intel Core i7-12700K (12 núcleos)| Placa base con chipset Intel Z790 |
+                        de
+                        1TB
+                        Gráficos: super graphics Nvidia GeForce RTX 4080.</h4>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/pc 2.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Wyvern Gaming PC</p>
+                    <span class="precio">$1,000.00</span>
+                    <h4>Intel Core i5-13400F, 16GB, 1TB SSD, NVIDIA GeForce RTX 3060, Windows 11, Black</h4>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/pc3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Skytech Gaming PC</p>
+                    <span class="precio">$800.00</span>
+                    <h4>Intel Core i5 13400F 2.5 GHz, NVIDIA RTX 3050, 1TB NVME SSD, 16GB DDR4 RAM 3200, 600W Gold
+                        PSU,
+                        11AC Wi-Fi, Windows 11
+                        Home 64-bit</h4>
+                </div>
 
 
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="../piblic/img/catalogo img/pc 2.jpg" alt="">
-                        </div>
-                        <p class="descripcion">Wyvern Gaming PC</p>
-                        <span class="precio">$1,000.00</span>
-                        <h4>Intel Core i5-13400F, 16GB, 1TB SSD, NVIDIA GeForce RTX 3060, Windows 11, Black</h4>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/overwatch.jpeg" alt="">
                     </div>
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="../piblic/img/catalogo img/pc3.jpg" alt="">
-                        </div>
-                        <p class="descripcion">Skytech Gaming PC</p>
-                        <span class="precio">$800.00</span>
-                        <h4>Intel Core i5 13400F 2.5 GHz, NVIDIA RTX 3050, 1TB NVME SSD, 16GB DDR4 RAM 3200, 600W Gold
-                            PSU,
-                            11AC Wi-Fi, Windows 11
-                            Home 64-bit</h4>
-                    </div>
+                    <p class="descripcion">Overwatch</p>
+                    <span class="precio">$12.99</span>
                 </div>
-                <div class="fila fila3">
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="img/7.png" alt="">
-                        </div>
-                        <p class="descripcion">producto 7</p>
-                        <span class="precio">$</span>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/halo infinite.jpeg" alt="">
                     </div>
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="img/8.png" alt="">
-                        </div>
-                        <p class="descripcion">producto 8</p>
-                        <span class="precio">$</span>
+                    <p class="descripcion">HALO:Infinite</p>
+                    <span class="precio">$12.99</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/starcraft 2.jpeg" alt="">
                     </div>
-                    <div class="item" onclick="cargar(this)">
-                        <div class="contenedor-foto">
-                            <img src="img/9.png" alt="">
-                        </div>
-                        <p class="descripcion">producto 9</p>
-                        <span class="precio">$</span>
+                    <p class="descripcion">Starcraft 2</p>
+                    <span class="precio">$12.99</span>
+                </div>
+
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/final fantasy vii.jpeg" alt="">
                     </div>
+                    <p class="descripcion">Final Fantasy VII</p>
+                    <span class="precio">$12.99</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/devil may cry 5.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Devil May Cry 5</p>
+                    <span class="precio">$12.99</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/black ops ii.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Call Of Duty: Black Ops 2</p>
+                    <span class="precio">$25.00</span>
                 </div>
 
 
             </div>
+        </main>
+        <section class="seleccion-caja">
             <div class="seleccion" id="seleccion">
-                <div class="cerrar" onclick="cerrar()">
-                    <ion-icon id="close" name="close-outline"></ion-icon>
-                </div>
                 <div class="infoB">
+                    <div class="cerrar" onclick="cerrar()">
+                        <ion-icon id="close" name="close-outline"></ion-icon>
+                    </div>
                     <img src="img/1.png" alt="" id="img">
                     <h2 id="modelo">producto</h2>
                     <span class="precio" id="precio">$</span>
@@ -258,6 +344,8 @@
                     </div>
                 </div>
             </div>
+        </section>
+    </section>
     </section>
 
 
@@ -266,6 +354,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="../piblic/script/menudesplegable.js"></script>
     <script src="../piblic/script/catalogo.js"></script>
+    <script src="../piblic/script/sliderdots.js"></script>
 </body>
 
 </html>

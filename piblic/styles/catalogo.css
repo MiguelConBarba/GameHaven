@@ -2,7 +2,9 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 
@@ -12,44 +14,47 @@
 
 }
 
-.mostrador .fila {
+.mostrador {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 40px 8vmax 0;
-
+    margin: 40px 40px 8vmax 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
 
 }
 
-.mostrador .fila .item {
+.mostrador .item {
     max-width: 300px;
     padding: 30px;
-    height: 450px;
+    height: 330px;
     text-align: center;
-    margin: 0 10px;
+    margin: 10px 0;
     cursor: pointer;
     border: solid #e8ffe634 3px;
     border-radius: 15px;
     transition: .3s;
+    width: 230px;
 }
 
-.mostrador .fila .item:hover {
+.mostrador .item:hover {
     background-color: #e8ffe634;
     transform: scale(5px);
     transform: translateY(-10px);
 }
 
-.mostrador .fila .item img {
-    width: 100%;
+.mostrador .item img {
+    height: 180px;
+    width: 150px;
     margin: 5px 0;
 }
 
-.mostrador .fila .item .descripcion {
+.mostrador .item .descripcion {
     color: #ffffff;
     font-weight: bold;
 }
 
-.mostrador .fila .item .precio {
+.mostrador .item .precio {
     color: #73f851;
     font-weight: bold;
     font-size: 20px;
@@ -59,7 +64,6 @@
     transition: .5s ease;
     opacity: 0;
     width: 0%;
-    min-height: 750px;
     max-height: 1200px;
     border: 1px solid #73f851;
     position: relative;
@@ -68,7 +72,7 @@
     overflow: hidden;
     border-radius: 15px;
     margin: 40px auto;
-    background-color: rgb(38, 61, 61);
+    background-color: rgba(38, 61, 61, 0.8);
 }
 
 .cerrar {
@@ -158,17 +162,48 @@
     font-size: 0.1px;
     color: #e8ffe600;
 }
-
-.fila1 img {
-    max-width: 214px;
-    max-height: 298px;
-    min-width: 133px;
-    min-height: 173px;
+.precio-descuento{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.precio-descuento a{
+    margin-left: 50px;
 }
 
-.fila2 img {
-    max-width: 250px;
-    max-height: 302px;
-    min-width: 133px;
-    min-height: 173px;
+.precio-anterior{
+    color: #b3b3b3;
+    font-size: 17px;
+    text-decoration: line-through solid red;
+    align-self: flex-start;
+
+}
+
+.precio-actual{
+    color: #73f851;
+    font-size: 26px;
+}
+
+
+.descuento-porcentaje{
+    color: #fff;
+    font-size: 20px;
+    margin: 7px 3px 3px 7px;
+}
+
+.prcnt-container{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    justify-self: right;
+    align-items: center;
+    background-color: rgb(86, 255, 74);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 100px;
+    height: 100px;
+    margin: -39px -10px 0 0 ;
+}
+
+.both-prices{
+    display: flex;
 }
