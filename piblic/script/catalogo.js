@@ -8,10 +8,12 @@ let product = document.getElementsByClassName("item");
 
 function cargar(item) {
     quitarBordes();
-    mostrador.style.width = "80%";
-    seleccion.style.width = "600px";
-    seleccion.style.height = "500px";
+    seleccion.style.width = "300px";1
+    seleccion.style.margin = "300px 0 0 0";
+    seleccion.style.height = "fit-content";
     seleccion.style.opacity = "1";
+    mostrador.style.margin = " 40px 0 8vmax -60px";
+    mostrador.style.gap = "4px";
     item.style.border = "2px solid #73f851";
 
     imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
@@ -21,14 +23,13 @@ function cargar(item) {
     descripSeleccionada.innerHTML = item.getElementsByTagName("h4")[0].innerHTML;
 
     precioSeleccionado.innerHTML = item.getElementsByTagName("span")[0].innerHTML;
-
-
-
 }
 function cerrar() {
     mostrador.style.width = "100%";
     seleccion.style.width = "0%";
     seleccion.style.opacity = "0";
+    mostrador.style.margin = " 40px 40px 8vmax 40px";
+    mostrador.style.gap = "20px";
     quitarBordes();
 }
 function quitarBordes() {

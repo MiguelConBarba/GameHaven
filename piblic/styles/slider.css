@@ -61,17 +61,13 @@
     width: 100%;
     text-align: center;
     animation: slide 15s infinite;
+    height: 90px;
 }
 
 
 .text-slider h2 {
     color: white;
     z-index: 1;
-}
-
-.text-slider p {
-    color: #73f851;
-    font-size: 26px;
 }
 
 .text-slider img {
