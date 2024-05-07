@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Haven</title>
+    <link rel="icon" href="piblic/img/logo img/logo_sin_letra.png">
     <link rel="stylesheet" href="piblic/styles/barranav.css">
+    <link rel="stylesheet" href="piblic/styles/snake.css">
     <link rel="stylesheet" href="piblic/styles/info.css">
     <link rel="stylesheet" href="piblic/styles/cards.css">
     <link rel="stylesheet" href="piblic/styles/footer.css ">
@@ -17,9 +19,8 @@
     <section class="Game-Haven" id="Inicio">
         <div class="Info-Haven">
             <div class="contenido-Haven">
-                <img src="piblic/img/logo.jfif" alt="Logo">
+                <img src="piblic/img/logo img/logo horizontal.png" alt="Logo">
                 <div class="text-content">
-                    <h2>GAME HAVEN</h2>
                     <p>"¡Sumérgete en el paraíso de los videojuegos en Game Haven! ¡Tu destino digital para la diversión
                         sin límites!"</p>
 
@@ -40,10 +41,10 @@
         <div>
             <div class="nombre-pagina">
                 <ion-icon id="logo_menu" name="menu-outline"></ion-icon>
-                <span>titulo</span>
+                <span>Game Haven</span>
             </div>
 
-<!-- ACA IBA EL BUSCADOR  -->
+            <!-- ACA IBA EL BUSCADOR  -->
         </div>
 
         <nav class="navegacion">
@@ -74,6 +75,18 @@
                     <a href="#">
                         <ion-icon name="cart-outline"></ion-icon>
                         <span>carrito</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/sign-up.html">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                        <span>registrate</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/log-in.html">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <span>iniciar sesión</span>
                     </a>
                 </li>
             </ul>
@@ -113,7 +126,7 @@
                             <h2>Nuesto Catalogo</h2>
                             <p>En GAMEHAVEN te ofrecemos una compra rapida y segura de tus aventuras favoritas mediante
                                 nuestro <a href="pages/catalogo.html">Catalogo</a> con
-                                los mejores juegos de
+                                los mejores videojuegos de
                                 varias generaciones, ¿Que esperas para hecharle un vistazo?</p>
                         </div>
                     </div>
@@ -135,6 +148,25 @@
             </div>
         </section>
 
+        <!--SNAKE-GAME-->
+        <section class="snake" id="snake">
+            <h2>SNAKE GAME
+            </h2>
+            <canvas width="400" height="400" id="game"></canvas>
+            <div class="snake-container">
+                <div class="start-game">
+                    <button class="start" onclick="requestAnimationFrame(loop);">INICIAR</button>
+                </div>
+                <div class="pause-game">
+                    <button class="pause" onclick="Reiniciar()"> REINICIAR</button>
+                </div>
+                <div class="bloqueo">
+                    <button class="Boton-bloqueo" id="boton-bloqueo">Bloquear pantalla <ion-icon
+                            name="lock-closed-outline"></ion-icon></button>
+                </div>
+            </div>
+        </section>
+
         <!--CONOCENOS-->
 
         <section class="conocenos">
@@ -142,25 +174,22 @@
                 <h2 class="titulo">CONOCENOS</h2>
                 <div class="conocenos-card">
                     <h3>Quienes Somos?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nisi saepe aut laudantium
-                        voluptas aliquid dolorum numquam veniam repellat distinctio hic natus consequuntur ab sed,
-                        dolore sint exercitationem, aperiam odit tempora explicabo dolorem, quos eveniet. Magnam eius
-                        consequuntur illum delectus deserunt dolorum odio ipsum labore provident temporibus quisquam
-                        officiis, distinctio, soluta repudiandae veniam placeat praesentium autem exercitationem
-                        nesciunt sint ad.</p>
+                    <p>Game Haven es una empresa dedicada a la venta de videojuegos tanto en formato digital como
+                        físico. Ofrecemos una amplia
+                        variedad de juegos para todas las plataformas populares y realizamos envíos a lo largo de toda
+                        Colombia. Nuestro
+                        objetivo es proporcionar a nuestros clientes la mejor experiencia de compra de videojuegos,
+                        brindando un servicio rápido
+                        y confiable.</p>
                 </div>
                 <div class="conocenos-card">
                     <h3>Como Funciona Nuestra Tienda</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nisi saepe aut laudantium
-                        voluptas aliquid dolorum numquam veniam repellat distinctio hic natus consequuntur ab sed,
-                        dolore sint exercitationem, aperiam odit tempora explicabo dolorem, quos eveniet. Magnam eius
-                        consequuntur illum delectus deserunt dolorum odio ipsum labore provident temporibus quisquam
-                        officiis, distinctio, soluta repudiandae veniam placeat praesentium autem exercitationem
-                        nesciunt sint ad.</p>
+                    <p>En nuestro catálogo puedes encontrar gran variedad de productos, puedes añadir los que quieras al
+                        carrito y hacer el pedido, si deseas también puedes jugar el clásico juego de la serpiente el
+                        cual se encuentra en nuestra página principal totalmente gratis. </p>
                 </div>
                 <div class="conocenos-card-metodosdepago">
                     <h3>Metodos De Pago</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, expedita.</p>
                     <div class="pagos">
                         <img src="piblic/img/bancolombia.png" alt="bancolombia" class="pago">
                         <img src="piblic/img/mastercard.png" alt="mastercard" class="pago">
@@ -171,6 +200,7 @@
 
             </div>
         </section>
+
         <!--
             FOOTER
         -->
@@ -182,11 +212,12 @@
                         <div class="footer-links">
 
                             <h4> <strong>Compañia</strong></h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident soluta architecto
-                                natus,
-                                consequuntur accusamus iure recusandae explicabo omnis eligendi eius, vel error
-                                obcaecati, minus
-                                repudiandae nostrum quidem nemo porro nisi!</p>
+                            <p>Game Haven es una tienda especializada en la venta de videojuegos en formato físico y
+                                digital. Ofrecemos una amplia
+                                selección de juegos para todas las consolas y realizamos envíos a todo el territorio
+                                colombiano. Nuestro compromiso es
+                                brindar a nuestros clientes una experiencia de compra excepcional, con un servicio
+                                rápido y confiable.</p>
 
                             <br>
 
@@ -212,6 +243,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="piblic/script/menudesplegable.js"></script>
+    <script src="piblic/script/snake.js"></script>
 </body>
 
 </html>

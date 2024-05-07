@@ -7,31 +7,31 @@ const menu = document.querySelector(".menu");
 const main = document.querySelectorAll("main");
 const search = document.getElementById("search");
 
-menu.addEventListener("click",()=>{
+menu.addEventListener("click", () => {
     barralateral.classList.toggle("max-barra-lateral");
-    if(barralateral.classList.contains("max-barra-lateral")){
-        menu.children[0].style.display ="block";
-        menu.children[1].style.display ="none";
+    if (barralateral.classList.contains("max-barra-lateral")) {
+        menu.children[0].style.display = "block";
+        menu.children[1].style.display = "none";
     }
-    else{
-        menu.children[0].style.display ="none";
-        menu.children[1].style.display ="block";
+    else {
+        menu.children[0].style.display = "none";
+        menu.children[1].style.display = "block";
     }
-    if(window.innerWidth<=320){
+    if (window.innerWidth <= 320) {
         barralateral.classList.add("mini-barra-lateral");
-        main.forEach((element)=>{
+        main.forEach((element) => {
             element.classList.add("min-main");
         })
-        spans.forEach((span)=>{
+        spans.forEach((span) => {
             span.classList.add("oculto");
         })
-        let sliderName=window.location.href.split("#")[1];
-        window.location="#"+sliderName
+        let sliderName = window.location.href.split("#")[1];
+        window.location = "#" + sliderName
     }
 });
 
 
-palanca.addEventListener("click",()=>{
+palanca.addEventListener("click", () => {
     let body = document.body;
     body.classList.toggle("dark-mode");
     circulo.classList.toggle("prendido");
@@ -52,8 +52,8 @@ logo_menu.addEventListener("click", () => {
     // Force navigation to a specific section (#slider1)
     window.location.hash = "#slider1";
 
-window.innerWidth <= 320 ? search.style.visibility = "hidden" : null;
-    
+    window.innerWidth <= 320 ? search.style.visibility = "hidden" : null;
+
 });
 
 

@@ -7,6 +7,7 @@
     <link rel="icon" href="../piblic/img/logo img/logo_sin_letra.png">
     <link rel="stylesheet" href="../piblic/styles/barranav.css">
     <link rel="stylesheet" href="../piblic/styles/sign-up.css">
+    <link rel="stylesheet" href="../piblic/styles/footer.css">
     <title>Game Haven</title>
 </head>
 
@@ -23,11 +24,6 @@
                 <span>Game Haven</span>
             </div>
 
-
-            <button class="boton">
-                <ion-icon name="search-outline"></ion-icon>
-                <span>create new</span>
-            </button>
         </div>
 
         <nav class="navegacion">
@@ -101,49 +97,86 @@
     <!--registro-->
 
     <main>
+        <section class="centrar">
+            <section class="main">
+                <h1>REGISTRATE</h1>
+                <div class="username form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" class="username-inp" id="account" placeholder="Brayan Dominguez">
+                </div>
 
-        <section class="main">
-            <h1>REGISTRATE</h1>
-            <div class="username form">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" class="username-inp" id="account" placeholder="Brayan Dominguez">
-            </div>
+                <div class="correo form">
+                    <label for="correo">Email</label>
+                    <input type="text" name="correo" class="email-inp" id="account" placeholder="brayandom@gmail.com">
+                </div>
 
-            <div class="correo form">
-                <label for="correo">Email</label>
-                <input type="text" name="correo" class="email-inp" id="account" placeholder="brayandom@gmail.com">
-            </div>
-
-            <div class="contraseña form borde">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña" class="contraseña-inp" id="passwordInput" placeholder="BrayDom123.">
-            </div>
+                <div class="contraseña form borde">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" class="contraseña-inp" id="passwordInput"
+                        placeholder="BrayDom123.">
+                </div>
 
 
-            <div class="confirmar-contraseña form borde">
-                <label for="confirmar-contraseña">Confirmar Contraseña</label>
-                <input type="password" name="confirmar-contraseña" class="contraseña-confirm-inp" id="ConfirmpasswordInput"
-                    placeholder="BrayDom123.">
-            </div>
+                <div class="confirmar-contraseña form borde">
+                    <label for="confirmar-contraseña">Confirmar Contraseña</label>
+                    <input type="password" name="confirmar-contraseña" class="contraseña-confirm-inp"
+                        id="ConfirmpasswordInput" placeholder="BrayDom123.">
+                </div>
 
-            <span id="togglePassword" onclick="togglePasswordVisibility()">
-                <ion-icon name="eye-off" id="passwordEye"></ion-icon>
-            </span>
-            <span id="toggleConfirm" onclick="toggleConfirmPasswordVisibility()">
-                <ion-icon name="eye-off" id="confirmEye"></ion-icon>
-            </span>
-            
-            <div class="telefono form">
-                <label for="telefono">Teléfono</label>
-                <input type="text" name="telefono" class="telefono-inp" id="account" placeholder="+57 300 000 00 00">
-            </div>
+                <span id="togglePassword" onclick="togglePasswordVisibility()">
+                    <ion-icon name="eye-off" id="passwordEye"></ion-icon>
+                </span>
+                <span id="toggleConfirm" onclick="toggleConfirmPasswordVisibility()">
+                    <ion-icon name="eye-off" id="confirmEye"></ion-icon>
+                </span>
+
+                <div class="telefono form">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" name="telefono" class="telefono-inp" id="account"
+                        placeholder="+57 300 000 00 00">
+                </div>
 
                 <div class="iniciodesesion-btn">
                     <button type="submit">Registrarse</button>
                 </div>
 
-            <span class="login"><p>¿Ya tienes una cuenta?</p> <a href="log-in.html">Inicia sesión</a></span>
+                <span class="login">
+                    <p>¿Ya tienes una cuenta?</p> <a href="log-in.html">Inicia sesión</a>
+                </span>
+            </section>
         </section>
+        <footer style="margin-top: 10px;">
+
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-row">
+                        <div class="footer-links">
+
+                            <h4> <strong>Compañia</strong></h4>
+                            <p>Game Haven es una tienda especializada en la venta de videojuegos en formato físico y
+                                digital. Ofrecemos una amplia
+                                selección de juegos para todas las consolas y realizamos envíos a todo el territorio
+                                colombiano. Nuestro compromiso es
+                                brindar a nuestros clientes una experiencia de compra excepcional, con un servicio
+                                rápido y confiable.</p>
+
+                            <br>
+
+                            <h4> <strong>Redes Sociales</strong> </h4>
+                            <div class="social-link">
+
+                                <a href="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
     </main>
 
 

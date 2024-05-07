@@ -15,6 +15,7 @@
     border-radius: 15px;
     position: absolute;
 }
+
 .form {
     display: flex;
     flex-direction: column;
@@ -24,25 +25,31 @@
 main {
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    text-align: center;
 
+
+}
+
+label {
+    margin: 30px 0 5px 0;
 
 }
 
 input {
-        padding: 18px 12px;
-        background-color: #1f4a50;
-        border: 0;
-        outline: none;
-        border-radius: 25px;
-        color: #f5f5f5;
-        font-size: 16px;
+    padding: 18px 12px;
+    background-color: #1f4a50;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    color: #f5f5f5;
+    font-size: 16px;
 }
+
 button {
-        padding: 17px 15px;
-            width: 125px;
-            font-size: 16px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 17px 15px;
+    width: 125px;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 #togglePassword {
@@ -60,7 +67,7 @@ button {
 
 #toggleConfirm {
     position: absolute;
-    margin: 95px 0 ;
+    margin: 95px 0;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
@@ -75,25 +82,36 @@ button {
     bottom: 0;
 }
 
-.login a{
+.login a {
     color: rgb(192, 192, 192);
 }
 
-.login a:visited{
-    color:white;
+.login a:visited {
+    color: white;
 }
 
-.login-eye{
+.login-eye {
     margin: 55px 0;
 }
-.iniciodesesion-btn button{
+
+.iniciodesesion-btn button {
     border-radius: 25px;
     border: none;
     padding: 15px;
     cursor: pointer;
+    margin: 50px;
     color: #f5f5f5;
     background-color: #1ae016;
 }
-.iniciodesesion-btn button:hover{
+
+.iniciodesesion-btn button:hover {
     background-color: #1a9618;
+}
+
+.centrar {
+
+    margin: 0 0 0 190px;
+    height: 1000px;
+    justify-content: center;
+
 }

@@ -10,13 +10,13 @@ const basededatos = [
     }
 ]
 
-boton.addEventListener("click", () =>{
-        console.log("CLCIk")
-        if (basededatos[0].usuario == "2"){
-            alert("EXISTE")
-        }else{
-            alert("NO EXISTE")
-        }      
+boton.addEventListener("click", () => {
+    console.log("CLCIk")
+    if (basededatos[0].usuario == "2") {
+        alert("EXISTE")
+    } else {
+        alert("NO EXISTE")
+    }
 })
 
 function togglePasswordVisibility() {

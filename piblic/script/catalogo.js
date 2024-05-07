@@ -1,5 +1,5 @@
-let mostrador = document.getElementById("mostrador");
-let seleccion = document.getElementById("seleccion");
+const mostrador = document.getElementById("mostrador");
+const seleccion = document.getElementById("seleccion");
 let imgSeleccionada = document.getElementById("img");
 let modeloSeleccionado = document.getElementById("modelo");
 let descripSeleccionada = document.getElementById("descripcion");
@@ -8,7 +8,7 @@ let product = document.getElementsByClassName("item");
 
 function cargar(item) {
     quitarBordes();
-    seleccion.style.width = "300px";1
+    seleccion.style.width = "300px";
     seleccion.style.margin = "300px 0 0 0";
     seleccion.style.height = "fit-content";
     seleccion.style.opacity = "1";
@@ -28,7 +28,7 @@ function cerrar() {
     mostrador.style.width = "100%";
     seleccion.style.width = "0%";
     seleccion.style.opacity = "0";
-    mostrador.style.margin = " 40px 40px 8vmax 40px";
+    mostrador.style.margin = " 40px 40px 8vmax 60px";
     mostrador.style.gap = "20px";
     quitarBordes();
 }
@@ -38,3 +38,22 @@ function quitarBordes() {
         items[i].style.border = "solid #e8ffe634";
     }
 }
+
+function adjustGridColumns() {
+    const mediaQuery = window.matchMedia('(max-width: 1000px)');
+    const grid = document.querySelector('.mostrador');
+
+    const toggleGridColumns = (mq) => {
+        if (mq.matches) {
+            grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
+
+        } else {
+            grid.style.gridTemplateColumns = 'repeat(3, 1fr)';
+        }
+    };
+
+    toggleGridColumns(mediaQuery);
+    mediaQuery.addListener(toggleGridColumns);
+}
+
+adjustGridColumns();

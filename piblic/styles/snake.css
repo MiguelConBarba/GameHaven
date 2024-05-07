@@ -1,0 +1,39 @@
+canvas {
+    background-color: rgb(59, 59, 59);
+    border: solid white 1px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.start-game button,
+.Boton-bloqueo,
+.pause {
+    width: 100px;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    background-color: rgb(106, 255, 52);
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+.start-game button:hover,
+.Boton-bloqueo:hover {
+    background-color: rgb(32, 120, 0);
+}
+
+.bloqueo ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.snake-container {
+    display: flex;
+    justify-content: center;
+}
+
+.snake {
+    color: white;
+}

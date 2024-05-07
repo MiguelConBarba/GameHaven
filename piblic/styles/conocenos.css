@@ -1,15 +1,44 @@
-section.conocenos{
+section.conocenos {
     background-color: white;
-    margin-top: 20vh;
-    height: 100vh;
-    font-size: x-large;
+    margin: 20vh 0 0 -20px;
+    height: fit-content;
+    font-size: 20px;
+    width: 105%;
+    display: flex;
+    justify-content: center;
 }
 
-section.conocenos div.conocenos-containe{
+section.conocenos div.conocenos-container {
     background-color: white;
+    width: 80%;
 }
 
-div.pagos img{
+.conocenos-card p {
+    width: 80%;
+}
+
+.conocenos-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.pagos img {
     width: 100px;
-    height: 50px;
+    height: 100%;
+    margin: 0 10px 0 10px;
+
+}
+
+.conocenos-container h2,
+.conocenos-container h3,
+.conocenos-container p {
+    margin: 10px 0 10px 0;
+
+}
+
+.pagos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

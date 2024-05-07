@@ -7,20 +7,14 @@
 
 }
 
-
 .mostrador {
     width: 100%;
-    transition: .5s ease;
-
-}
-
-.mostrador {
-    width: 100%;
-    margin: 40px 40px 8vmax 40px;
+    margin: 40px 40px 8vmax 60px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
     gap: 20px;
+    transition: .5s ease;
 
 }
 
@@ -162,16 +156,18 @@
     font-size: 0.1px;
     color: #e8ffe600;
 }
-.precio-descuento{
+
+.precio-descuento {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.precio-descuento a{
+
+.precio-descuento a {
     margin-left: 50px;
 }
 
-.precio-anterior{
+.precio-anterior {
     color: #b3b3b3;
     font-size: 17px;
     text-decoration: line-through solid red;
@@ -179,19 +175,19 @@
 
 }
 
-.precio-actual{
+.precio-actual {
     color: #73f851;
     font-size: 26px;
 }
 
 
-.descuento-porcentaje{
+.descuento-porcentaje {
     color: #fff;
     font-size: 20px;
     margin: 7px 3px 3px 7px;
 }
 
-.prcnt-container{
+.prcnt-container {
     display: flex;
     position: relative;
     justify-content: end;
@@ -201,9 +197,9 @@
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     width: 100px;
     height: 100px;
-    margin: -39px -10px 0 0 ;
+    margin: -39px -10px 0 0;
 }
 
-.both-prices{
+.both-prices {
     display: flex;
 }

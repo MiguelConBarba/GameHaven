@@ -1,9 +1,9 @@
-.container{
-    transition: translate(-50%,-50%);
+.container {
+    transition: translate(-50%, -50%);
     width: 45px;
 }
 
-input{
+input {
     outline: none;
     box-sizing: border-box;
     height: 40px;
@@ -16,11 +16,11 @@ input{
     transition: all .7s ease;
 }
 
-::placeholder{
+::placeholder {
     color: gray;
 }
 
-.btn{
+.btn {
     position: absolute;
     right: 50px;
     left: 15px;
@@ -34,18 +34,17 @@ input{
     cursor: pointer;
 }
 
-.btn ion-icon{
+.btn ion-icon {
     top: 5px;
     font-size: 25px;
     color: white;
     transition: all 0.7s ease;
 }
 
-.container:hover input{
+.container:hover input {
     width: 230px;
 }
 
-.container:hover ion-icon{
+.container:hover ion-icon {
     transform: rotate(- 360deg);
 }
-
