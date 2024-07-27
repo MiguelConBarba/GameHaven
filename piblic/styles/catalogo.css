@@ -203,3 +203,15 @@
 .both-prices {
     display: flex;
 }
+
+.header1{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    z-index: 50;
+    width: 100%;
+     
+}
+.login-link-container a{
+    padding-left: 1200px;
+}

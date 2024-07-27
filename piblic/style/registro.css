@@ -1,0 +1,93 @@
+.container-login{
+    top: calc(50% - 55px);
+    width: 100%;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+.formularioUsr input,
+.loginForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.formularioUsr input[type="submit"],
+.loginForm input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.formularioUsr input[type="submit"]:hover,
+.loginForm input[type="submit"]:hover {
+    background: #4797ff;
+}
+
+#loginMessage, #signupMessage {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.container-signup {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container-login {
+    opacity: 1;
+    pointer-events: all;
+    
+}
+
+.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#password-strength {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.password-container {
+    display: flex;
+}
+.password-container input {
+    width: 200%;
+}
+
+.toggle-password {
+    background: none;
+    color: #1b1b1b;
+    width: 40px;
+}
+main ion-icon {
+    width: 30px;
+    height: 30px;
+}
+.toggle-password:hover {
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    position: center;
+}
