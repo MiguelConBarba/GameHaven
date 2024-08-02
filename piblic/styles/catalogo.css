@@ -11,7 +11,7 @@
     width: 100%;
     margin: 40px 40px 8vmax 60px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     gap: 20px;
     transition: .5s ease;
