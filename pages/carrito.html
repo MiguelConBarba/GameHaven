@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../piblic/img/logo img/logo_sin_letra.png">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="piblic/img/logo img/logo_sin_letra.png">
     <link rel="stylesheet" href="../piblic/styles/barranav.css">
-    <link rel="stylesheet" href="../piblic/styles/buscador.css">
-    <link rel="stylesheet" href="../piblic/styles/catalogo-footer.css">
-    <link rel="stylesheet" href="../piblic/style/registro.css">
+    <link rel="stylesheet" href="../piblic/styles/footer.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-    <title>apartado registro y inicio</title>
 </head>
-
 <body>
-
     <div class="menu">
         <ion-icon name="close-outline"></ion-icon>
         <ion-icon name="menu-outline"></ion-icon>
@@ -27,12 +25,13 @@
                 <span>Game Haven</span>
             </div>
 
+            <!-- ACA IBA EL BUSCADOR  -->
         </div>
 
         <nav class="navegacion">
             <ul>
                 <li>
-                    <a href="../index.html">
+                    <a  href="../index.html">
                         <ion-icon name="home-outline"></ion-icon>
                         <span>inicio</span>
                     </a>
@@ -72,12 +71,14 @@
                     </a>
                 </li>
 
+                
             </ul>
         </nav>
 
         <!--colocar usuario dentro del div de abajo-->
+
         <div class="login-link-container">
-            <a href="sign-up and log-in.html" class="username"><ion-icon name="add-circle-outline"></ion-icon>   login</a>
+            <a href="pages/sign-up and log-in.html" class="username"><ion-icon name="add-circle-outline"></ion-icon>login</a>
         </div>
 
         <div>
@@ -101,53 +102,45 @@
 
     </div>
     <main>
+
         
-<section class="container-login general-container" id="login">
-    <h1>Login</h1>
-    <form action="" class="loginForm" id="loginForm">
-        <input type="email" class="login" placeholder="Email" id="loginEmail">
-        <div class="password-container">
-            <input type="password" class="login" placeholder="Password" id="loginPassword">
-            <button type="button" class="toggle-password" id="toggleLoginPassword"><ion-icon name="eye-outline"></ion-icon></button>
+       
+    <!--FOOTER-->
+    <footer>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-links">
+
+                        <h4> <strong>Compañia</strong></h4>
+                        <p>Game Haven es una tienda especializada en la venta de videojuegos en formato físico y
+                            digital. Ofrecemos una amplia
+                            selección de juegos para todas las consolas y realizamos envíos a todo el territorio
+                            colombiano. Nuestro compromiso es
+                            brindar a nuestros clientes una experiencia de compra excepcional, con un servicio
+                            rápido y confiable.</p>
+
+                        <br>
+
+                        <h4> <strong>Redes Sociales</strong> </h4>
+                        <div class="social-link">
+
+                            <a href="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <input type="submit" class="login" id="loginSubmit" value="Submit">
-    </form>
-    <p id="loginMessage"></p>
-    <button id="toggleToSignup">Don't have an account? Sign up</button>
-</section>
-<section class="container-signup general-container" id="addUsr">
-    <h1>Sign up</h1>
-    <form action="" class="formularioUsr" id="form">
-        <input type="text" placeholder="Name" id="nombre">
-        <input type="text" placeholder="Last name" id="apellido">
-        <input type="email" placeholder="Email" id="email">
-        <div class="password-container">
-            <input type="password" placeholder="Password" id="password">
-            <button type="button" class="toggle-password" id="toggleSignupPassword"><ion-icon name="eye-outline"></ion-icon></button>
-        </div>
-        <div id="password-strength"></div>
-        <input type="submit" id="submit" value="Submit">
-    </form>
-    <p id="signupMessage"></p>
-    <button id="toggleToLogin">Already have an account? Login</button>
-</section>
 
-    </main>
-
-</body>
-    
-
-
-
-<script src="../piblic/script/signup_login.js"></script>
-    <script src="../piblic/script/login.js"></script>
-    <script src="../piblic/script/toggle.js"></script>
-    <script src="../piblic/script/password.js"></script>
-    <script src="../piblic/script/catalogo.js"></script>
-    <script src="../piblic/script/menudesplegable.js"></script>
+    </footer>
+</main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../piblic/script/namelo.js"></script>
-
-
+    <script src="../piblic/script/menudesplegable.js"></script>
+</body>
 </html>

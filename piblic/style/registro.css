@@ -74,6 +74,11 @@ h1 {
     width: 200%;
 }
 
+#log-in{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+
 .toggle-password {
     background: none;
     color: #1b1b1b;

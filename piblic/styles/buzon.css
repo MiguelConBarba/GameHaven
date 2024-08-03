@@ -113,6 +113,10 @@ video {
     object-fit: cover;
     z-index: -1;
 }
+#buzoncito{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
 
 @media(max-width: 991px) {
 

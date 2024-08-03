@@ -104,6 +104,16 @@ button {
     background-color: #1ae016;
 }
 
+#sign-up{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+
+#log-in{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+
 .iniciodesesion-btn button:hover {
     background-color: #1a9618;
 }

@@ -157,6 +157,11 @@
     color: #e8ffe600;
 }
 
+#cataloguito{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+
 .precio-descuento {
     display: flex;
     align-items: center;
