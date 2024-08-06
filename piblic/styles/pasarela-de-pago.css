@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*Styles Globales (INCIO)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    color: var(--gray-900);
+    background-color: var(--gray-50);
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+/*Styles Globales (FINAL)*/
+
+/*Styles Payment (INCIO)*/
+.payment-section{
+    padding: 48px 0;
+}
+
+.payment-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.payment-header{
+    padding: 24px;
+    background-color: var(--indigo-500);
+    border-radius: 12px;
+    padding-bottom: 72px;
+}
+
+.payment-header-icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--indigo-600);
+    color: var(--white);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.payment-header-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.payment-header-description{
+    font-size: 15px;
+    color: var(--gray-300);
+    line-height: 1.5;
+}
+
+.payment-content{
+    padding: 24px;
+    margin-top: -64px;
+    position: relative;
+}
+
+.payment-content::before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 16px);
+    height: 16px;
+    border-radius: 6px;
+    background-color: var(--indigo-600);
+}
+
+.payment-body{
+    background-color: var(--white);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .05), inset 0 8px rgba(0, 0, 0, .05);  
+    position: relative;
+    padding-top: 8px;
+}
+
+.payment-plan{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.payment-plan-type{
+    width: 40px;
+    height: 40px;
+    background-color: var(--indigo-500);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.payment-plan-info-name{
+    font-size: 13px;
+    
+}
+/*Styles Payment (FINAL)*/
