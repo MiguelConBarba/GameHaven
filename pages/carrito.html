@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../piblic/styles/barranav.css">
     <link rel="stylesheet" href="../piblic/styles/footer.css ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../piblic/styles/catalogo.css">
 
 </head>
 <body>
@@ -71,7 +72,6 @@
                     </a>
                 </li>
 
-                
             </ul>
         </nav>
 
@@ -101,7 +101,153 @@
         </div>
 
     </div>
+        
     <main>
+        <h2>Carrito</h2>
+        <div class="contenedor-carrito">
+            <p class="carrito-vacio">Carrito vacio<ion-icon name="sad-outline"></ion-icon></p>
+            <div class="carrito-productos">
+                <div class="carrito-producto">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="../piblic/img/catalogo img/Assasins creed ps4.jpg" alt="">
+                        </div>
+                        <p class="descripcion">Assasin`s Creed Valhalla</p>
+                        <span class="precio">$20.00</span>
+                    </div>
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/Assasins creed ps4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Assasin`s Creed Valhalla</p>
+                    <span class="precio">$20.00</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/ps5 fc24.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>FC24 - PS5</p>
+                    <span class="precio">$20.00</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/GTA5 ps4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Grand Thef Auto V- PS4</p>
+                    <span class="precio">$20.00</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/pc 1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CYBERPOWERPC PC gaming</p>
+                    <span class="precio">$ 2,600.00 </span>
+                    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/pc 2.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Wyvern Gaming PC</p>
+                    <span class="precio">$1,000.00</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/pc3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Skytech Gaming PC</p>
+                    <span class="precio">$800.00</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/overwatch.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Overwatch</p>
+                    <span class="precio">$12.99</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/halo infinite.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">HALO:Infinite</p>
+                    <span class="precio">$12.99</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/starcraft 2.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Starcraft 2</p>
+                    <span class="precio">$12.99</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/final fantasy vii.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Final Fantasy VII</p>
+                    <span class="precio">$12.99</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/devil may cry 5.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Devil May Cry 5</p>
+                    <span class="precio">$12.99</span>
+                </div>    
+                </div>
+                <div class="carrito-producto"></div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../piblic/img/catalogo img/black ops ii.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Call Of Duty: Black Ops 2</p>
+                    <span class="precio">$25.00</span>
+                </div>    
+                </div>
+
+            </div>
+            <div class="carrito-acciones">
+                <div class="carrito-acciones-izquierda">
+                    <button class="carrito-acciones-vaciar">vaciar carrito</button>
+                </div>
+                <div class="carrito-acciones-izquierda">
+                    <div class="carrito-acciones-total">
+                        <p>total</p>
+                        <p id="total">3000</p>
+
+                    </div>
+                    <button class="carrito-acciones-comprar">Comprar ahora</button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <li>
+            <a class="boton-volver" href="catalogo.html">
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                <span>Seguir comprando</span>
+            </a>
+        </li>
 
         
        
