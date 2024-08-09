@@ -112,8 +112,43 @@ body{
     margin-right: 8px;
 }
 
+.payment-plan-info{
+    width: 100%;
+    margin-right: 8px;
+}
+
 .payment-plan-info-name{
     font-size: 13px;
-    
+    color: var(--gray-400);
+    margin-bottom: 2px;
+}
+
+.payment-plan-info-price{
+    font-weight: 600;
+}
+/*BORRAR LUEGO*/
+.payment-plan-change{
+    color: var(--blue-500);
+    font: 12px;
+    font-weight: 600;
+    text-underline-offset: 2px;
+}
+
+.payment-plan-change:hover{
+    color: var(--blue-600);    
+}
+/*BORRAR LUEGO*/
+
+.payment-summary-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+}
+
+.payment-summary-name{
+    font-size: 14px;
+    color: var(--gray-500);
+
 }
 /*Styles Payment (FINAL)*/
