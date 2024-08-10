@@ -1,0 +1,9 @@
+#carrito-vacio{
+    color: white;
+    display: none;
+}
+#carrito-producto-eliminar{
+    border: 0;
+    background-color: transparent;
+    color: red;
+}
