@@ -54,7 +54,42 @@
                     </div>
                 </div>
                 <div class="payment-right">
-
+                    <form action="" class="payment-form">
+                        <h1 class="payment-title">Detalles Del Pago</h1>
+                        <div class="payment-method">
+                            <input type="radio" name="payment-method" id="method-1" checked>
+                            <label for="method-1" class="payment-method-item">
+                                <img src="../piblic/img/bancolombia.png" alt="">
+                            </label>
+                            <input type="radio" name="payment-method" id="method-2">
+                            <label for="method-2" class="payment-method-item">
+                                <img src="../piblic/img/mastercard.png" alt="">
+                            </label>
+                            <input type="radio" name="payment-method" id="method-3">
+                            <label for="method-3" class="payment-method-item">
+                                <img src="../piblic/img/paypal.png" alt="">
+                            </label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="email" placeholder=" " class="payment-form-control" id="email">
+                            <label for="email" class="payment-form-label payment-form-label-required">Email</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="text" placeholder=" " class="payment-form-control" id="card-number">
+                            <label for="card-number" class="payment-form-label payment-form-label-required">Numero de tarjeta</label>
+                        </div>
+                        <div class="payment-form-group-flex">
+                            <div class="payment-form-group">
+                                <input type="date" placeholder=" " class="payment-form-control" id="expiry-date">
+                                <label for="expiry-date" class="payment-form-label payment-form-label-required">Fecha de Expiracion</label>
+                            </div>
+                            <div class="payment-form-group">
+                                <input type="text" placeholder=" " class="payment-form-control" id="cvv">
+                                <label for="cvv" class="payment-form-label payment-form-label-required">CVV</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="payment-form-submit-button"><i class="ri-wallet-line"></i> CONFIRMAR</button>
+                    </form>
                 </div>
             </div>
         </div>
