@@ -1,9 +1,45 @@
-#carrito-vacio{
+.carrito-vacio{
     color: white;
-    display: none;
+    display: block;
 }
-#carrito-producto-eliminar{
+.carrito-producto-eliminar{
     border: 0;
     background-color: transparent;
     color: red;
+    cursor: pointer;
 }
+.carrito-acciones{
+    display: flex;
+    justify-content: space-between;
+}
+.carrito-acciones-vaciar{
+    border: 0;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+.carrito-acciones-comprar{
+    border: 0;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.carrito-acciones-derecha{
+    display: flex;
+}
+.carrito-acciones-total{
+    display: flex;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
