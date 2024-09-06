@@ -1,222 +1,217 @@
 .contenido {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .mostrador {
-    width: 100%;
-    margin: 40px 40px 8vmax 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    gap: 20px;
-    transition: .5s ease;
-
+  width: 100%;
+  margin: 40px 40px 8vmax 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+  transition: 0.5s ease;
 }
 
 .mostrador .item {
-    max-width: 300px;
-    padding: 30px;
-    height: 330px;
-    text-align: center;
-    margin: 10px 0;
-    cursor: pointer;
-    border: solid #e8ffe634 3px;
-    border-radius: 15px;
-    transition: .3s;
-    width: 230px;
+  max-width: 300px;
+  padding: 30px;
+  height: 330px;
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+  border: solid #e8ffe634 3px;
+  border-radius: 15px;
+  transition: 0.3s;
+  width: 230px;
 }
 
 .mostrador .item:hover {
-    background-color: #e8ffe634;
-    transform: scale(5px);
-    transform: translateY(-10px);
+  background-color: #e8ffe634;
+  transform: scale(5px);
+  transform: translateY(-10px);
 }
 
 .mostrador .item img {
-    height: 180px;
-    width: 150px;
-    margin: 5px 0;
+  height: 180px;
+  width: 150px;
+  margin: 5px 0;
 }
 
 .mostrador .item .descripcion {
-    color: #ffffff;
-    font-weight: bold;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .mostrador .item .precio {
-    color: #73f851;
-    font-weight: bold;
-    font-size: 20px;
+  color: #73f851;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .seleccion {
-    transition: .5s ease;
-    opacity: 0;
-    width: 0%;
-    max-height: 1200px;
-    border: 1px solid #73f851;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 15px;
-    margin: 40px auto;
-    background-color: rgba(38, 61, 61, 0.8);
+  transition: 0.5s ease;
+  opacity: 0;
+  width: 0%;
+  max-height: 1200px;
+  border: 1px solid #73f851;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 40px auto;
+  background-color: rgba(38, 61, 61, 0.8);
 }
 
 .cerrar {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 #close {
-    color: white;
-    width: 30px;
-    height: 30px;
+  color: white;
+  width: 30px;
+  height: 30px;
 }
 
 .infoB {
-    padding: 20px;
+  padding: 20px;
 }
 
 .infoB img {
-    display: block;
-    margin: 30px auto;
-    width: 80%;
+  display: block;
+  margin: 30px auto;
+  width: 80%;
 }
 
 .infoB h2 {
-    color: #ffffff;
-    margin-bottom: 10px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .infoB p {
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .infoB .precio {
-    font-size: 30px;
-    font-weight: bold;
-    color: #78f851;
-    margin-bottom: 10px;
-    display: block;
+  font-size: 30px;
+  font-weight: bold;
+  color: #78f851;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .infoB .fila {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 .infoB .fila label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .infoB .fila select {
-    width: 100px;
-    font-size: 18px;
-    padding: 6px;
-    margin-right: 30px;
+  width: 100px;
+  font-size: 18px;
+  padding: 6px;
+  margin-right: 30px;
 }
 
 .infoB .fila button {
-    height: 40px;
-    border: none;
-    padding: 0 10px;
-    color: #fff;
-    background-color: #78f851;
-    border-radius: 10px;
-    font-size: 14px;
-    align-items: center;
-    transition: .2s;
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #78f851;
+  border-radius: 10px;
+  font-size: 14px;
+  align-items: center;
+  transition: 0.2s;
 }
 
 .infoB .fila button:hover {
-    background-color: #59bd3b;
+  background-color: #59bd3b;
 }
 
 .infoB .fila ion-icon {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    margin: -.5px 0 0 -4px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin: -0.5px 0 0 -4px;
 }
 
 .item h4 {
-    font-size: 0.1px;
-    color: #e8ffe600;
+  font-size: 0.1px;
+  color: #e8ffe600;
 }
 
-#cataloguito{
-    background-color: var(--color-menu-hover);
-    color: var(--color-menu-hover-texto);
+#cataloguito {
+  background-color: var(--color-menu-hover);
+  color: var(--color-menu-hover-texto);
 }
 
 .precio-descuento {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .precio-descuento a {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .precio-anterior {
-    color: #b3b3b3;
-    font-size: 17px;
-    text-decoration: line-through solid red;
-    align-self: flex-start;
-
+  color: #b3b3b3;
+  font-size: 17px;
+  text-decoration: line-through solid red;
+  align-self: flex-start;
 }
 
 .precio-actual {
-    color: #73f851;
-    font-size: 26px;
+  color: #73f851;
+  font-size: 26px;
 }
 
-
 .descuento-porcentaje {
-    color: #fff;
-    font-size: 20px;
-    margin: 7px 3px 3px 7px;
+  color: #fff;
+  font-size: 20px;
+  margin: 7px 3px 3px 7px;
 }
 
 .prcnt-container {
-    display: flex;
-    position: relative;
-    justify-content: end;
-    justify-self: right;
-    align-items: center;
-    background-color: rgb(86, 255, 74);
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    width: 100px;
-    height: 100px;
-    margin: -39px -10px 0 0;
+  display: flex;
+  position: relative;
+  justify-content: end;
+  justify-self: right;
+  align-items: center;
+  background-color: rgb(86, 255, 74);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  width: 100px;
+  height: 100px;
+  margin: -39px -10px 0 0;
 }
 
 .both-prices {
-    display: flex;
+  display: flex;
 }
 
-.header1{
-    background-color: white;
-    position: fixed;
-    display: flex;
-    z-index: 50;
-    width: 100%;
-     
+.header1 {
+  background-color: white;
+  position: fixed;
+  display: flex;
+  z-index: 50;
+  width: 100%;
 }
-.login-link-container a{
-    padding-left: 1200px;
+a.username {
+  padding-left: 85px;
 }
