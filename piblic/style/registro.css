@@ -1,98 +1,211 @@
-.container-login{
-    top: calc(50% - 55px);
-    width: 100%;
-    
+.container-login {
+  top: calc(50% - 55px);
+  width: 100%;
 }
 
 h1 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 2em;
-    color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #333;
 }
 
 .formularioUsr input,
 .loginForm input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
+  width: 100%;
+  margin: 10px 0;
 }
 
-.formularioUsr input[type="submit"],
 .loginForm input[type="submit"] {
-    background: #333;
-    color: #fff;
-    border: none;
+    width: 125px;
+    align-self: center;
+    text-transform: capitalize;
+}
+
+.formularioUsr input[type="submit"] {
+    width: 125px;
+    align-self: center;
+    text-transform: capitalize;
+    color: #f5f5f5;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 .formularioUsr input[type="submit"]:hover,
 .loginForm input[type="submit"]:hover {
-    background: #4797ff;
+    background-color: #59bd3b;
+    color: #f5f5f5;
+    transition: 0.5s;
 }
 
-#loginMessage, #signupMessage {
-    text-align: center;
-    margin: 10px 0 20px 0;
+#loginMessage,
+#signupMessage {
+  text-align: center;
+  margin: 10px 0 20px 0;
 }
 
 .container-signup {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .container-login {
-    opacity: 1;
-    pointer-events: all;
-    
+  opacity: 1;
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .show {
-    opacity: 1;
-    pointer-events: all;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .hide {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 #password-strength {
-    margin-top: 5px;
-    font-size: 0.9em;
-    color: #666;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
 }
 
 .password-container {
-    display: flex;
+  display: flex;
 }
 .password-container input {
-    width: 200%;
+  width: 100%;
 }
 
-#log-in{
-    background-color: var(--color-menu-hover);
-    color: var(--color-menu-hover-texto);
+#log-in {
+  background-color: var(--color-menu-hover);
+  color: var(--color-menu-hover-texto);
 }
 
 .toggle-password {
-    background: none;
-    color: #1b1b1b;
-    width: 40px;
+  background: none;
+  color: #1b1b1b;
+  width: 40px;
+  border: 0mm;
 }
 main ion-icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
 }
 .toggle-password:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
-a{
-    text-decoration: none;
-    position: center;
+a {
+  text-decoration: none;
+  position: center;
+}
+
+form {
+    margin-top: 10px;
+    padding: 50px;
+    background: linear-gradient(50deg,
+            rgba(31, 50, 51, 1) 0%,
+            rgba(29, 48, 48, 1) 50%,
+            rgb(28, 44, 44, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.form-container-login {
+    text-align: center;
+}
+
+.form-container-login h2 {
+    font-size: 40px;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+.form-container-sing-up {
+    text-align: center;
+}
+
+.form-container-sing-up h2 {
+    font-size: 40px;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: #1f4a50;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    color: #f5f5f5;
+    font-size: 16px;
+    width: 100%;
+}
+
+::placeholder {
+    color: #949494;
+    font-size: 16px;
+}
+
+#toggleToLogin{
+    border: 0cqb;
+    background-color: rgb(38, 61, 61);
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggleToLogin u{
+    color: #3e8528;
+}
+
+#toggleToLogin u:hover{
+    color: #59bd3b;
+    transition: 0.5s;
+}
+
+#toggleToSignup{
+    border: 0cqb;
+    background-color: rgb(38, 61, 61);
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggleToSignup u{
+    color: #3e8528;
+}
+
+#toggleToSignup u:hover{
+    color: #59bd3b;
+    transition: 0.5s;
+}
+
+.loginForm input[type="password"] {
+    width: 95%;
 }
