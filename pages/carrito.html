@@ -95,11 +95,12 @@
             <section class="contenido">
                 <main>
                     <h2>Carrito</h2>
-        <div class="contenedor-carrito">
+        
             <p class="carrito-vacio">carrito vacio<ion-icon name="sad-outline"></ion-icon></p>
+            <div class="contenedor-carrito disabled">
                          
         
-                    <div class="mostrador" id="mostrador">
+                    <div class="mostrador " id="mostrador">
         
                         <div class="item" onclick="cargar(this)">
                             <div class="contenedor-foto">
@@ -310,14 +311,8 @@
                                 la experiencia de Call
                                 of Duty: Black Ops 2!</h4>
                                 <button class="carrito-producto-eliminar"><ion-icon name="trash-outline"></ion-icon></button>
-                        </div>
-                        <li>
-                            <a class="boton-volver" href="catalogo.html">
-                                <ion-icon name="arrow-back-circle-outline"></ion-icon>
-                                <span>Seguir comprando</span>
-                            </a>
-                        </li>
-                        <div class="carrito-acciones">
+                        
+                        <div class="carrito-acciones disabled">
                             <div class="carrito-acciones-izquierda">
                                 <button class="carrito-acciones-vaciar">vaciar carrito</button>
                             </div>
@@ -327,6 +322,7 @@
                                     <p id="total">3000</p>
                         
                                 </div>
+                                <p class="carrito-comprado disabled">Muchas gracias por tu compra<ion-icon name="happy-outline"></ion-icon></p>
                                 <a href="pasarela-de-pago.html" class="carrito-acciones-comprar">Comprar</a>
                             </div>
                             

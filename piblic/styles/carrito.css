@@ -2,6 +2,10 @@
   color: white;
   display: block;
 }
+.carrito-comprado{
+  color: white;
+  display: flex;
+}
 .carrito-producto-eliminar {
   border: 0;
   background-color: transparent;
@@ -11,8 +15,7 @@
 .carrito-acciones {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  
 }
 .carrito-acciones-vaciar {
   border: 0;
@@ -22,12 +25,7 @@
   color: white;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 10px 20px;
-  background-color: #f44336; /* Color rojo elegante */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+ 
 }
 .carrito-acciones-comprar {
   border: 0;
@@ -41,6 +39,7 @@
 }
 .carrito-acciones-derecha {
   display: flex;
+  justify-content:space-between ;
 }
 .carrito-acciones-total {
   display: flex;
@@ -49,9 +48,10 @@
   border-radius: 1rem;
   color: white;
   text-transform: uppercase;
-  display: flex;
-    align-items: center;
-    gap: 5px;
+  gap: 1rem;  
+}
+.disabled{
+  display: none;
 }
 
 .contenido {
