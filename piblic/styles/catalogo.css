@@ -215,3 +215,14 @@
 a.username {
   padding-left: 85px;
 }
+#addcart{
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #78f851;
+  border-radius: 10px;
+  font-size: 14px;
+  align-items: center;
+  transition: 0.2s;
+}
