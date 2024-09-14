@@ -1,15 +1,16 @@
 .search-container {
     position: relative;
     width: 100%; /* O el ancho deseado */
-    padding: 20px 0; /* Aumenta el padding superior para bajar el campo de búsqueda */
+    padding: 60px 0; /* Aumenta el padding superior para bajar el campo de búsqueda */
     text-align: center; /* Opcional, para centrar el contenido en caso de añadir más elementos */
+    padding-right: 1000px;
 }
 
 #search-input {
     outline: none;
     box-sizing: border-box;
     height: 40px;
-    width: 300px; /* Ajusta el ancho según sea necesario */
+    width: 500px; /* Ajusta el ancho según sea necesario */
     color: black;
     border-radius: 50px;
     font-size: 20px;
@@ -18,5 +19,5 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 60px; /* Ajusta este valor para bajar el campo de búsqueda */
+    top: 50px; /* Ajusta este valor para bajar el campo de búsqueda */
 }
