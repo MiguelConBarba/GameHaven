@@ -21,3 +21,20 @@
     transform: translateX(-50%);
     top: 50px; /* Ajusta este valor para bajar el campo de búsqueda */
 }
+
+#no-results {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#no-results.fade-in {
+    opacity: 1;
+}
+
+.no-results{
+    display: none; 
+    font-size: 1.2rem; 
+    color: #ff4d4d; 
+    text-align: center; 
+    margin-top: 20px;
+}

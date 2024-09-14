@@ -28,5 +28,11 @@ document.getElementById('search-input').addEventListener('input', function () {
         }
     });
 
-    document.getElementById('no-results').style.display = hasResults ? 'none' : 'block';
+    const noResultsMessage = document.getElementById('no-results');
+    if (hasResults) {
+        noResultsMessage.style.display = 'none';
+    } else {
+        noResultsMessage.style.display = 'block';
+        noResultsMessage.classList.add('fade-in'); // Se puede añadir animación
+    }
 });
