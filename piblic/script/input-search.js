@@ -1,3 +1,5 @@
+
+//funcion de buscar y filtar tarjetas
 document.getElementById('search-input').addEventListener('input', function () {
     const searchQuery = this.value.toLowerCase();
     const catalogItems = document.querySelectorAll('.mostrador .item');
@@ -12,7 +14,7 @@ document.getElementById('search-input').addEventListener('input', function () {
     });
 });
 
-
+//funcion no-results
 document.getElementById('search-input').addEventListener('input', function () {
     const searchQuery = this.value.toLowerCase();
     const catalogItems = document.querySelectorAll('.item');
@@ -36,3 +38,5 @@ document.getElementById('search-input').addEventListener('input', function () {
         noResultsMessage.classList.add('fade-in'); // Se puede añadir animación
     }
 });
+ 
+

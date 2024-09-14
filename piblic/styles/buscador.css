@@ -1,26 +1,74 @@
 .search-container {
     position: relative;
-    width: 100%; /* O el ancho deseado */
-    padding: 60px 0; /* Aumenta el padding superior para bajar el campo de búsqueda */
-    text-align: center; /* Opcional, para centrar el contenido en caso de añadir más elementos */
-    padding-right: 1000px;
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.search-box {
+    position: relative;
+    display: inline-block;
+    align-items: center;
 }
 
 #search-input {
     outline: none;
     box-sizing: border-box;
     height: 40px;
-    width: 500px; /* Ajusta el ancho según sea necesario */
+    width: 500px;
     color: black;
     border-radius: 50px;
     font-size: 20px;
     border: 2px solid gray;
-    transition: all .7s ease;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50px; /* Ajusta este valor para bajar el campo de búsqueda */
+    transition: all 0.5s ease;
+    padding-left: 50px; /* Espacio para el ícono */
+    position: relative;
+    z-index: 1; /* Asegura que el input esté sobre el botón */
+    
+    /* Animaciones y sombras */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-in-out;
 }
+
+/* Icono de búsqueda */
+#search-button {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Alinea el ícono con el input */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #3498db; /* Color del ícono */
+    z-index: 2;
+    padding: 0;
+    outline: none;
+    
+
+}
+
+#search-input:focus {
+    width: 600px;
+    border-color: #3498db;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Animación de carga */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 #no-results {
     opacity: 0;

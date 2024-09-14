@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Haven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="../piblic/img/logo img/logo_sin_letra.png">
     <link rel="stylesheet" href="../piblic/styles/barranav.css">
     <link rel="stylesheet" href="../piblic/styles/buscador.css">
@@ -195,10 +196,15 @@
     </section>
 
     <!-- input-search Después del slider y antes del catálogo -->
-<section class="search-container">
-    <input type="text" id="search-input" placeholder="Buscar en el catálogo...">
-</section>
-
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button type="button" id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+    
 <span class="no-results" id="no-results">
     😞 No se encontraron resultados...
 </span>
