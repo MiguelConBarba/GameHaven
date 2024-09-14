@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Haven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="../piblic/img/logo img/logo_sin_letra.png">
     <link rel="stylesheet" href="../piblic/styles/barranav.css">
     <link rel="stylesheet" href="../piblic/styles/buscador.css">
@@ -29,13 +30,7 @@
                 <ion-icon id="logo_menu" name="menu-outline"></ion-icon>
                 <span>Game Haven</span>
             </div>
-            <div class="container">
-                <input type="text" placeholder="..    Buscar">
-                <div class="btn">
-                    <ion-icon name="search-outline"></ion-icon>
-                </div>
-                <!-- <input id="search" type="text" placeholder="Buscar">-->
-            </div>
+            
         </div>
         <nav class="navegacion">
             <ul>
@@ -75,7 +70,7 @@
         <!--colocar usuario dentro del div de abajo-->
         
         <div class="login-link-container">
-            <a href="pages/sign-up and log-in.html" class="username"><ion-icon name="add-circle-outline"></ion-icon>login</a>
+            <a href="sign-up-and-log-in.html" class="username"><ion-icon name="add-circle-outline"></ion-icon>login</a>
         </div>
 
         <div>
@@ -199,6 +194,22 @@
             </div>
         </div>
     </section>
+
+    <!-- input-search Después del slider y antes del catálogo -->
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button type="button" id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+    
+<span class="no-results" id="no-results">
+    😞 No se encontraron resultados...
+</span>
+
+
 
     <!--catalogo:-->
 
@@ -344,7 +355,10 @@
                         historia envolvente, StarCraft II ofrece una experiencia de estrategia profunda y desafiante.
                         ¡Prepárate para la guerra
                         intergaláctica y demuestra tu destreza como comandante en StarCraft II!</h4>
-                </div>
+               
+                       
+               
+                    </div>
 
 
                 <div class="item" onclick="cargar(this)">
@@ -442,6 +456,7 @@
     <script src="../piblic/script/signup_login.js"></script>
     <script src="../piblic/script/toggle.js"></script>
     <script src="../piblic/script/namelo.js"></script>
+    <script src="../piblic/script/input-search.js"></script>
     
 </body>
 

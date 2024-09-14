@@ -1,50 +1,88 @@
-.container {
-    transition: translate(-50%, -50%);
-    width: 45px;
+.search-container {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
 }
 
-input {
+.search-box {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+}
+
+#search-input {
     outline: none;
     box-sizing: border-box;
     height: 40px;
-    width: 15px;
-    padding: 0 20px;
+    width: 500px;
     color: black;
     border-radius: 50px;
     font-size: 20px;
     border: 2px solid gray;
-    transition: all .7s ease;
+    transition: all 0.5s ease;
+    padding-left: 50px; /* Espacio para el ícono */
+    position: relative;
+    z-index: 1; /* Asegura que el input esté sobre el botón */
+    
+    /* Animaciones y sombras */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-in-out;
 }
 
-::placeholder {
-    color: gray;
-}
-
-.btn {
+/* Icono de búsqueda */
+#search-button {
     position: absolute;
-    right: 50px;
-    left: 15px;
-    top: 69px;
-    width: 43px;
-    height: 43px;
-    background: rgb(155, 155, 155);
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
+    top: 50%;
+    left: 10px; /* Alinea el ícono con el input */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
     cursor: pointer;
+    font-size: 18px;
+    color: #3498db; /* Color del ícono */
+    z-index: 2;
+    padding: 0;
+    outline: none;
+    
+
 }
 
-.btn ion-icon {
-    top: 5px;
-    font-size: 25px;
-    color: white;
-    transition: all 0.7s ease;
+#search-input:focus {
+    width: 600px;
+    border-color: #3498db;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.container:hover input {
-    width: 230px;
+
+
+/* Animación de carga */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.container:hover ion-icon {
-    transform: rotate(- 360deg);
+
+
+#no-results {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#no-results.fade-in {
+    opacity: 1;
+}
+
+.no-results{
+    display: none; 
+    font-size: 1.2rem; 
+    color: #ff4d4d; 
+    text-align: center; 
+    margin-top: 20px;
 }

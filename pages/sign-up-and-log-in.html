@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../piblic/styles/catalogo-footer.css">
     <link rel="stylesheet" href="../piblic/style/registro.css">
 
-    <title>apartado registro y inicio</title>
+    <title>Game Heaven - Sing-Up-Login</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
 
         <!--colocar usuario dentro del div de abajo-->
         <div class="login-link-container">
-            <a href="sign-up and log-in.html" class="username"><ion-icon name="add-circle-outline"></ion-icon>   login</a>
+            <a href="sign-up-and-log-in.html" class="username"><ion-icon name="add-circle-outline"></ion-icon>   login</a>
         </div>
 
         <div>
@@ -91,20 +91,25 @@
     <main>
         
 <section class="container-login general-container" id="login">
-    <h1>Login</h1>
+    <div class="form-container-login">
+    <h2>Iniciar Sesion</h2>
     <form action="" class="loginForm" id="loginForm">
+        <div class="form-group">
         <input type="email" class="login" placeholder="Email" id="loginEmail">
         <div class="password-container">
             <input type="password" class="login" placeholder="Password" id="loginPassword">
             <button type="button" class="toggle-password" id="toggleLoginPassword"><ion-icon name="eye-outline"></ion-icon></button>
         </div>
-        <input type="submit" class="login" id="loginSubmit" value="Submit">
+    </div>
+        <input type="submit" class="login" id="loginSubmit" value="Login">
     </form>
     <p id="loginMessage"></p>
-    <button id="toggleToSignup">Don't have an account? Sign up</button>
+    <button id="toggleToSignup">No tienes una cuenta aun? <u>REGISTRATE</u></button>
+</div>
 </section>
 <section class="container-signup general-container" id="addUsr">
-    <h1>Sign up</h1>
+    <div class="form-container-sing-up">
+    <h2>Registrarse</h2>
     <form action="" class="formularioUsr" id="form">
         <input type="text" placeholder="Name" id="nombre">
         <input type="text" placeholder="Last name" id="apellido">
@@ -114,10 +119,11 @@
             <button type="button" class="toggle-password" id="toggleSignupPassword"><ion-icon name="eye-outline"></ion-icon></button>
         </div>
         <div id="password-strength"></div>
-        <input type="submit" id="submit" value="Submit">
+        <input type="submit" id="submit" value="Sing Up">
     </form>
     <p id="signupMessage"></p>
-    <button id="toggleToLogin">Already have an account? Login</button>
+    <button id="toggleToLogin">Ya tienes una cuenta? <u>INCIA SESION</u></button>
+</div>
 </section>
 
     </main>
