@@ -21,7 +21,7 @@
     font-size: 20px;
     border: 2px solid gray;
     transition: all 0.5s ease;
-    padding-left: 50px; /* Espacio para el ícono */
+    padding-left: 80px; /* Espacio para el ícono */
     position: relative;
     z-index: 1; /* Asegura que el input esté sobre el botón */
     
