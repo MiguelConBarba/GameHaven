@@ -225,4 +225,5 @@ a.username {
   font-size: 14px;
   align-items: center;
   transition: 0.2s;
+  cursor: pointer;
 }
