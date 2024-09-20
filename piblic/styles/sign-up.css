@@ -125,3 +125,62 @@ button {
     justify-content: center;
 
 }
+
+/* Estilos generales para el botón en la barra de navegación */
+.login-link-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del enlace (botón de login) */
+.login-link-container a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-link-container a ion-icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* Hover: efecto de sombra y cambio de color */
+.login-link-container a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .login-link-container a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .login-link-container a ion-icon {
+        font-size: 18px;
+    }
+}
+
+/* Responsivo para pantallas extra pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    .login-link-container a {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .login-link-container a ion-icon {
+        font-size: 16px;
+    }
+}

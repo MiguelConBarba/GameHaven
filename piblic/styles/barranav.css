@@ -59,6 +59,7 @@ body {
     height: 100vh;
     width: 100%;
     background-color: rgb(38, 61, 61);
+    overflow-x: hidden;
 }
 
 /*boton de menu*/
