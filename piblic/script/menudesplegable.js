@@ -1,6 +1,7 @@
 const logo_menu = document.getElementById("logo_menu");
 const barralateral = document.querySelector(".barra-lateral")
 const spans = document.querySelectorAll("span");
+const spanBuscador = document.getElementById("#no-results");
 const palanca = document.querySelector(".switch");
 const circulo = document.querySelector(".circulo");
 const menu = document.querySelector(".menu");
@@ -46,6 +47,7 @@ logo_menu.addEventListener("click", () => {
     // Toggle visibility of spans (possibly menu items)
     spans.forEach((span) => {
         span.classList.toggle("oculto"); // "oculto" likely means "hidden"
+        spanBuscador.classList.toggle("oculto"); // "Esto mantiene constante el mensaje "no se encontraron resultados""
     });
     // Get current page section from URL hash (if present)
     let sliderName = window.location.href.split("#")[1];
@@ -55,6 +57,3 @@ logo_menu.addEventListener("click", () => {
     window.innerWidth <= 320 ? search.style.visibility = "hidden" : null;
 
 });
-
-
-
