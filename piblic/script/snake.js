@@ -2,16 +2,14 @@ var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 var grid = 16;
 var count = 0;
+var gameOver = false;  // Variable que indica si el juego ha terminado
 
 var snake = {
     x: 160,
     y: 160,
-
     dx: grid,
     dy: 0,
-
     celdas: [],
-
     maximoDeCeldas: 4
 };
 var apple = {
@@ -19,12 +17,13 @@ var apple = {
     y: 320
 };
 
-
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function loop() {
+    if (gameOver) return;  // Detener el juego si ha terminado
+
     requestAnimationFrame(loop);
 
     if (++count < 10) {
@@ -37,18 +36,11 @@ function loop() {
     snake.x += snake.dx;
     snake.y += snake.dy;
 
-    if (snake.x < 0) {
-        snake.x = canvas.width - grid;
-    }
-    else if (snake.x >= canvas.width) {
-        snake.x = 0;
-    }
-
-    if (snake.y < 0) {
-        snake.y = canvas.height - grid;
-    }
-    else if (snake.y >= canvas.height) {
-        snake.y = 0;
+    // Si la serpiente se sale del canvas, el juego termina
+    if (snake.x < 0 || snake.x >= canvas.width || snake.y < 0 || snake.y >= canvas.height) {
+        gameOver = true;  // Se bloquea el juego
+        alert("¡Has perdido! Presiona REINICIAR para volver a jugar.");
+        return;
     }
 
     snake.celdas.unshift({ x: snake.x, y: snake.y });
@@ -72,26 +64,19 @@ function loop() {
             apple.y = getRandomInt(0, 25) * grid;
         }
 
+        // Si la serpiente se muerde a sí misma, el juego termina
         for (var i = index + 1; i < snake.celdas.length; i++) {
-
             if (cell.x === snake.celdas[i].x && cell.y === snake.celdas[i].y) {
-                snake.x = 160;
-                snake.y = 160;
-                snake.celdas = [];
-                snake.maximoDeCeldas = 4;
-                snake.dx = grid;
-                snake.dy = 0;
-
-                apple.x = getRandomInt(0, 25) * grid;
-                apple.y = getRandomInt(0, 25) * grid;
+                gameOver = true;  // Se bloquea el juego
+                alert("¡Has perdido! Presiona REINICIAR para volver a jugar.");
+                return;
             }
         }
     });
 }
 
-
 document.addEventListener('keydown', function (e) {
-
+    if (gameOver) return;  // No permitir que se mueva si el juego ha terminado
 
     if (e.which === 37 && snake.dx === 0) {
         snake.dx = -grid;
@@ -110,6 +95,21 @@ document.addEventListener('keydown', function (e) {
         snake.dx = 0;
     }
 });
+
+// Función para reiniciar el juego
+function Reiniciar() {
+    gameOver = false;  // Desbloquear el juego
+    snake.x = 160;
+    snake.y = 160;
+    snake.celdas = [];
+    snake.maximoDeCeldas = 4;
+    snake.dx = grid;
+    snake.dy = 0;
+    apple.x = getRandomInt(0, 25) * grid;
+    apple.y = getRandomInt(0, 25) * grid;
+    requestAnimationFrame(loop);  // Volver a ejecutar el bucle del juego
+}
+
 const desbloquearPantalla = document.getElementById('boton-bloqueo');
 let LaPantallaEstaDesbloqueada = true;
 
@@ -122,16 +122,3 @@ desbloquearPantalla.addEventListener('click', () => {
 
     LaPantallaEstaDesbloqueada = !LaPantallaEstaDesbloqueada;
 });
-
-
-function Reiniciar() {
-    var scrollPosition = window.scrollY;
-
-    location.reload();
-
-    setTimeout(function () {
-        document.getElementById('snake').scrollIntoView();
-
-        window.scrollTo(0, scrollPosition);
-    }, 100);
-}
