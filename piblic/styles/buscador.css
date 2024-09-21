@@ -35,7 +35,7 @@
 #search-button {
     position: absolute;
     top: 50%;
-    left: 10px; /* Alinea el ícono con el input */
+    left: -50px; /* Alinea el ícono con el input */
     transform: translateY(-50%);
     background: none;
     border: none;
