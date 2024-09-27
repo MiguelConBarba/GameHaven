@@ -22,7 +22,7 @@
     font-size: 20px;
     border: 2px solid gray;
     transition: all 0.5s ease;
-    padding-left: 80px; /* Espacio para el ícono */
+    padding-left: 40px; /* Espacio para el ícono */
     position: relative;
     z-index: 1; /* Asegura que el input esté sobre el botón */
     
@@ -35,7 +35,7 @@
 #search-button {
     position: absolute;
     top: 50%;
-    left: -50px; /* Alinea el ícono con el input */
+    left: 7px; /* Alinea el ícono con el input */
     transform: translateY(-50%);
     background: none;
     border: none;
