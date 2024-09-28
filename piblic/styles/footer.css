@@ -60,3 +60,26 @@ body {
   background-color: rgb(74, 109, 109);
   transform: scale(1.13);
 }
+
+/*  la sección de Manuales y Atención */
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+}
+
+.footer-links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: rgb(97, 172, 153);
+  text-decoration: underline;
+}
