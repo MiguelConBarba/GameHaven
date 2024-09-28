@@ -6,6 +6,7 @@ const circulo = document.querySelector(".circulo");
 const menu = document.querySelector(".menu");
 const main = document.querySelectorAll("main");
 const search = document.getElementById("search");
+const noResults = document.getElementById('#no-results')
 const loginButton = document.querySelector(".login-link-container a");
 
 menu.addEventListener("click", () => {
@@ -53,7 +54,12 @@ logo_menu.addEventListener("click", () => {
     // Alternar la visibilidad de los spans (incluyendo login)
     spans.forEach((span) => {
         span.classList.toggle("oculto");
+        // La visibilidad del texto "no-results" se mantiende 
+        noResults.forEach((span) =>{
+            span.classList.toggle("oculto")
+        })    
     });
+   
     loginButton.classList.toggle("oculto");
 
     // Forzar la navegación a una sección específica

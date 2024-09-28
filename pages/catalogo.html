@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Heaven</title>
+    <title>Game Heaven - Catalogo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="../piblic/img/logo-fotor-20240921113551.png">
     <link rel="stylesheet" href="../piblic/styles/barranav.css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../piblic/styles/slider.css">
     <link rel="stylesheet" href="../piblic/styles/catalogo-footer.css">
     <link rel="stylesheet" href="../piblic/style/registro.css">
-        
+    <link rel="stylesheet" href="../piblic/styles/carrito-en-catalogo.css">
 
     <link rel="icon" href="../piblic/img/logo_sin_letra.png">
 </head>
@@ -29,7 +29,7 @@
         <div>
             <div class="nombre-pagina">
                 <ion-icon id="logo_menu" name="menu-outline"></ion-icon>
-                <span>GAME HEAVEN</span>
+                <span>GAME HEAVEN </span>
             </div>
             
         </div>
@@ -59,10 +59,34 @@
                 </li>
 
                 <li>
-                    <a href="carrito.html">
+                    <!--CARRITO NUEVO (INICIO)-->
+                    <a href="#">
+                        <div class="container-icons">
                         <ion-icon name="cart-outline"></ion-icon>
                         <span>CARRITO</span>
+                        </div>
+                        <div class="count-products">
+                            <span id="contador-productos">0</span>
+                        </div>
+                        <div class="container-cart-products hidden-cart container-cart-products-cerrado">
+                            <div class="cart-product">
+                                <div class="info-cart-product">
+                                    <span class="cantidad-producto-carrito">1</span>
+                                    <span class="titulo-producto-carrito">HALO: infinite</span>
+                                    <span class="precio-producto-carrito">$12.99</span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                  </svg>
+                                  
+                            </div>
+                            <div class="cart-total-carrito">
+                                <span class="total">Total:</span>
+                                <span class="total-pagar">$200</span>
+                            </div>
+                        </div>
                     </a>
+                    <!--CARRITO NUEVO (INICIO)-->
                 </li>
 
             </ul>
@@ -495,7 +519,7 @@
     <script src="../piblic/script/namelo.js"></script>
     <script src="../piblic/script/input-search.js"></script>
     <script src="../piblic/script/carrito.js"></script>
-    
+    <script src="../piblic/script/carrito-en-catalogo.js"></script>
 </body>
 
 </html>
