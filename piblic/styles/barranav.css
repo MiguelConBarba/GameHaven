@@ -119,7 +119,25 @@ body {
 
 .oculto {
     visibility: hidden;
+    display: none;
 }
+
+/* Animación para ocultar elementos suavemente */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out.oculto {
+    display: none;
+}
+
+/* Mostrar elementos suavemente */
+span, .login-text {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
 
 /*nombre de la pagina*/
 .barra-lateral .nombre-pagina {
@@ -348,53 +366,4 @@ main.min-main {
     align-items: center;
 }
 
-/* Estilos del enlace (botón de login) */
-.login-link-container a {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-.login-link-container a ion-icon {
-    margin-right: 8px;
-    font-size: 20px;
-}
-
-/* Hover: efecto de sombra y cambio de color */
-.login-link-container a:hover {
-    background-color: #0056b3;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsivo para pantallas pequeñas */
-@media (max-width: 768px) {
-    .login-link-container a {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    .login-link-container a ion-icon {
-        font-size: 18px;
-    }
-}
-
-/* Responsivo para pantallas extra pequeñas (teléfonos móviles) */
-@media (max-width: 480px) {
-    .login-link-container a {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-
-    .login-link-container a ion-icon {
-        font-size: 16px;
-    }
-}
