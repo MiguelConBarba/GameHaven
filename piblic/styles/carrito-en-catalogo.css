@@ -1,3 +1,9 @@
+header{
+    z-index: 9999;
+    justify-content: space-between;
+    padding: 30px 0 40px;
+    background-color: #FFF;
+}
 .count-products {
     position: absolute;
     top: 40%;
@@ -10,6 +16,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+.icon-cart{
+    width: 35px;
+    height: 35px;
+    stroke: #000;
+    position: relative;
+    right: -600px;
 }
 
 #contador-productos {

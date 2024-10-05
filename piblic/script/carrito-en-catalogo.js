@@ -6,10 +6,10 @@ const logoMenu = document.querySelector('#logo_menu');
 conteinerCartProducts.classList.add('container-cart-products');
 
 btnCart.addEventListener('click', () => {
-    conteinerCartProducts.classList.toggle('hidden-cart');
+    conteinerCartProducts.classList.toggle('icon-cart');
 })
 btnCartClose.addEventListener('click', () => {
-    conteinerCartProducts.classList.toggle('hidden-cart');
+    conteinerCartProducts.classList.toggle('icon-cart');
 });
 
 logoMenu.addEventListener('click', () => {

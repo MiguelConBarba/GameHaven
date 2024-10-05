@@ -117,6 +117,13 @@ video {
     background-color: var(--color-menu-hover);
     color: var(--color-menu-hover-texto);
 }
+.expandable-input {
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    resize: none; 
+    box-sizing: border-box;
+}
 
 @media(max-width: 991px) {
 
