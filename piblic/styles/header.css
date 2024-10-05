@@ -1,0 +1,133 @@
+header {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between; 
+    padding: 30px 0 40px 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.new-login-btn {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 1100px;
+}
+
+.new-login-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.icon-cart {
+    width: 40px;
+    height: 40px;
+    stroke: rgb(0, 0, 0);
+}
+
+.info-product {
+    padding: 15px 30px;
+}
+
+.container-icon {
+    position: relative;
+    margin-right: 40px;
+}
+
+.container-icon-animation:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.count-products {
+    position: absolute;
+    top: 55%;
+    right: 0;    
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.container-cart-products {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
+    border-radius: 10px;
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-cart-product {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito {
+    font-size: 20px;
+}
+
+.precio-producto-carrito {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover {
+    stroke: red;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total p.total {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart {
+    display: none;
+}
