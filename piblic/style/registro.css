@@ -56,6 +56,13 @@ h1 {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 100%;
+  max-width: 400px; 
+  padding: 20px;
 }
 
 .container-login {
@@ -213,3 +220,7 @@ input {
 .loginForm input[type="password"] {
     width: 95%;
 }
+ 
+
+
+
