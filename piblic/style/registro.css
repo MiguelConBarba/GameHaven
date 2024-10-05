@@ -1,6 +1,10 @@
+
 .container-login {
   top: calc(50% - 55px);
   width: 100%;
+  position: relative; /* Asegúrate de que este contenedor tenga posición relativa */
+  height: 100vh; /* Ajusta la altura según sea necesario */
+  overflow: hidden; /* Esto previene que el contenido se desborde visualmente */
 }
 
 h1 {
@@ -50,19 +54,20 @@ h1 {
 }
 
 .container-signup {
-  opacity: 0;
+  opacity: 0; /* Mantén esto si estás alternando entre formularios */
   pointer-events: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Cambiado a flex-start para alinear a la izquierda */
   min-height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%); 
+  position: relative;
+  top: -650px;
+  left: 26%;
+  transform: translateX(-50%);
+  padding-left: 100px; /* Ajusta este valor para mover el formulario más a la derecha */
   width: 100%;
-  max-width: 400px; 
-  padding: 20px;
+  
+  max-width: 400px; /* Puedes ajustar este ancho si es necesario */
 }
 
 .container-login {
@@ -72,6 +77,7 @@ h1 {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  
 }
 
 .show {
