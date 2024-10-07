@@ -38,9 +38,9 @@ header {
     margin-right: 40px;
 }
 
-.container-icon-animation:hover{
+.container-cart-icon:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.15);
     transition: 0.5s;
 }
 
@@ -107,7 +107,8 @@ header {
 .icon-close:hover {
     stroke: red;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.5s;
+    transform: scale(1.05);
 }
 
 .cart-total {
@@ -130,4 +131,17 @@ header {
 
 .hidden-cart {
     display: none;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.void{
+    font-weight: 900;
 }
