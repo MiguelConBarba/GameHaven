@@ -64,7 +64,7 @@ header {
     top: 50px;
     right: 0;
     background-color: #fff;
-    width: 400px;
+    width: 360px;
     z-index: 2;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
     border-radius: 10px;
@@ -74,7 +74,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 27px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 }
 
@@ -85,47 +85,47 @@ header {
 }
 
 .titulo-producto-carrito {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .precio-producto-carrito {
     font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
+    font-size: 18px;
+    margin-left: 9px;
 }
 
 .cantidad-producto-carrito {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .icon-close {
-    width: 25px;
-    height: 25px;
+    width: 22.5px;
+    height: 22.5px;
 }
 
 .icon-close:hover {
     stroke: red;
     cursor: pointer;
     transition: 0.5s;
-    transform: scale(1.05);
+    transform: scale(1.075);
 }
 
 .cart-total {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
-    gap: 20px;
+    padding: 18px 0;
+    gap: 18px;
 }
 
 .cart-total p.total {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .total-pagar {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
 }
 
@@ -144,4 +144,20 @@ header {
 
 .void{
     font-weight: 900;
+}
+
+.pagar-btn{
+    color: #39941d;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+
+.pagar-btn:hover{
+    color: #59bd3b;
+    font-weight: 700;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.075);
 }
