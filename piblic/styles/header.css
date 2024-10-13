@@ -2,9 +2,12 @@ header {
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between; 
-    padding: 30px 0 40px 0;
+    padding: 10px 0; 
     background-color: rgb(255, 255, 255);
     width: 100%;
+    position: fixed; 
+    top: 0; 
+    z-index: 1; 
 }
 
 .new-login-btn {
@@ -61,20 +64,20 @@ header {
 
 .container-cart-products {
     position: absolute;
-    top: 50px;
+    top: 60px; 
     right: 0;
     background-color: #fff;
-    width: 360px;
+    width: 310px;
     z-index: 2;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
-    border-radius: 10px;
+    border-radius: 5px 5px 10px 10px;
 }
 
 .cart-product {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 27px;
+    padding: 22px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 }
 
@@ -85,23 +88,25 @@ header {
 }
 
 .titulo-producto-carrito {
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .precio-producto-carrito {
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 800;
+    font-size: 15px;
     margin-left: 9px;
+    color: #59bd3b;
 }
 
 .cantidad-producto-carrito {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 800;
+    font-size: 15px;
 }
 
 .icon-close {
-    width: 22.5px;
-    height: 22.5px;
+    width: 22px;
+    height: 22px;
 }
 
 .icon-close:hover {
@@ -117,15 +122,16 @@ header {
     align-items: center;
     padding: 18px 0;
     gap: 18px;
+    border-top: 1px solid rgba(0, 0, 0, 0.20);
 }
 
 .cart-total p.total {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
 }
 
 .total-pagar {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
 }
 
@@ -146,18 +152,51 @@ header {
     font-weight: 900;
 }
 
+.go-buying{
+    font-weight: 900;
+    text-decoration: none;
+    color: #39941d;
+}
+
+.go-buying:hover{
+    color: #59bd3b;
+    transition: 0.3s;
+}
+
 .pagar-btn{
     color: #39941d;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 
 .pagar-btn:hover{
     color: #59bd3b;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 17px;
     cursor: pointer;
     transition: 0.5s;
-    transform: scale(1.075);
+    transform: scale(1.0725);
+}
+
+/* SCROLL CARRITO */
+.row-product {
+    max-height: 255px; 
+    overflow-y: auto;  
+    padding-right: 10px; 
+}
+
+  .row-product::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.row-product::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px; 
+    margin-right: 5px;
+}
+  
+  .row-product::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+    margin-right: 5px;
 }

@@ -29,8 +29,6 @@ menu.addEventListener("click", () => {
             span.classList.add("oculto");
         });
 
-        let sliderName = window.location.href.split("#")[1];
-        window.location = "#" + sliderName;
     } else {
         spans.forEach((span) => {
             span.classList.remove("oculto");
@@ -50,10 +48,6 @@ logo_menu.addEventListener("click", () => {
     spans.forEach((span) => {
         span.classList.toggle("oculto");
     });
-
-    // Navegación forzada a una sección específica
-    let sliderName = window.location.href.split("#")[1];
-    window.location.hash = "#slider1";
 
     if (window.innerWidth <= 320) {
         search.style.visibility = "hidden";
