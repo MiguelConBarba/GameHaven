@@ -147,6 +147,7 @@ span, .login-text {
     align-items: center;
     margin-bottom: 40px;
     color: var(--color-texto);
+    padding-bottom: 20px;
 }
 
 .barra-lateral .nombre-pagina ion-icon {
