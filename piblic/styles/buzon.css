@@ -1,14 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 section.formluario {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    margin-top: 45px;
 }
 
 .form-container {
@@ -21,7 +16,7 @@ section.formluario {
     margin-bottom: 10px;
 }
 
-.form-container span {
+.form-container p {
     font-size: 18px;
     color: #59bd3b;
     margin-bottom: 50px;
