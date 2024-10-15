@@ -33,32 +33,32 @@
         </div>
     </section>
     <header>
-        <!-- Enlace de Iniciar Sesión a la izquierda -->
-        <a href="sign-up-and-log-in.html" class="new-login-btn"><ion-icon name="add-circle-outline" class="new-login-icon"></ion-icon>Login Now</a>
+       <!-- Enlace de Iniciar Sesión a la izquierda -->
+       <a href="../pages/sign-up-and-log-in.html" class="new-login-btn" id="username"><ion-icon name="add-circle-outline" class="new-login-icon"></ion-icon>Login Now</a>
     
-        <!-- Contenedor del carrito a la derecha -->
-        <div class="container-icon">
-            <div class="container-cart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                    </svg>
-                    <div class="count-products">
-                        <p id="contador-productos">0</p>
-                    </div>
-            </div>
-           
-            <div class="container-cart-products hidden-cart">
-                <div class="row-product hidden">
-                    
-                </div>
-                <div class="cart-total hidden">
-                    <p class="total">TOTAL:</p>
-                    <p class="total-pagar">$0</p>
-                    <a href="pasarela-de-pago.html" class="pagar-btn">BUY NOW!</a>
-                </div>
-                <p class="cart-empty">Go to our <a href="pages/catalogo.html" class="go-buying">CATALOG</a> to start shopping</p>
-            </div>
-        </div>
+       <!-- Contenedor del carrito a la derecha -->
+       <div class="container-icon">
+           <div class="container-cart-icon">
+                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                   </svg>
+                   <div class="count-products">
+                       <p id="contador-productos">0</p>
+                   </div>
+           </div>
+          
+           <div class="container-cart-products hidden-cart">
+               <div class="row-product hidden">
+                   
+               </div>
+               <div class="cart-total hidden">
+                   <p class="total">TOTAL:</p>
+                   <p class="total-pagar">$0</p>
+                   <a href="pasarela-de-pago.html" class="pagar-btn">BUY NOW!</a>
+               </div>
+               <p class="cart-empty">The Cart is <b class="void">EMPTY</b> 😔</p>
+           </div>
+       </div>
     </header>
     <script src="piblic/script/carrito-en-catalogo.js"></script>
     <video autoplay loop muted>
@@ -85,14 +85,14 @@
                 <li>
                     <a id="botoncasita" href="#">
                         <ion-icon name="home-outline"></ion-icon>
-                        <span>INICIO</span>
+                        <span>HOME PAGE</span>
                     </a>
                 </li>
                 <li>
 
                     <a href="pages/catalogo.html">
                         <ion-icon name="copy-outline"></ion-icon>
-                        <span>CATALOGO</span>
+                        <span>CATALOG</span>
                     </a>
 
                 </li>
@@ -100,7 +100,7 @@
 
                     <a href="pages/buzon.html">
                         <ion-icon name="mail-open-outline"></ion-icon>
-                        <span>CONTACTANOS</span>
+                        <span>CONTACT US</span>
                     </a>
 
                 </li>
@@ -108,9 +108,11 @@
         </nav>
 
         <!--colocar usuario dentro del div de abajo-->
-
         <div class="login-link-container">
-            <a href="pages/sign-up-and-log-in.html" class="username"><ion-icon name="add-circle-outline"></ion-icon>login</a>
+            <a href="pages/sign-up-and-log-in.html" class="username">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                <span class="login-text">login</span>
+            </a>
         </div>
 
         <div>
