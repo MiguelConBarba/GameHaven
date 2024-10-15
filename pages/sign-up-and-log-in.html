@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="icon" href="../piblic/img/logo-fotor-20240921113551.png">
-    <link rel="stylesheet" href="../piblic/styles/barranav.css">
-    <link rel="stylesheet" href="../piblic/styles/buscador.css">
     <link rel="stylesheet" href="../piblic/styles/catalogo-footer.css">
     <link rel="stylesheet" href="../piblic/style/registro.css">
-    <link rel="stylesheet" href="../piblic/styles/header.css">
     <link rel="stylesheet" href="../piblic/style/max-width-pages.css">
     <link rel="icon" href="../piblic/img/logo img/logo-pequeño.png">
 
@@ -17,151 +14,89 @@
 </head>
 
 <body>
-
-    <header>
-        <!-- Enlace de Iniciar Sesión a la izquierda -->
-        <a href="../pages/sign-up-and-log-in.html" class="new-login-btn" id="username"><ion-icon name="add-circle-outline" class="new-login-icon"></ion-icon>Login Now</a>
-    
-        <!-- Contenedor del carrito a la derecha -->
-        <div class="container-icon">
-            <div class="container-cart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                    </svg>
-                    <div class="count-products">
-                        <p id="contador-productos">0</p>
-                    </div>
-            </div>
-           
-            <div class="container-cart-products hidden-cart">
-                <div class="row-product hidden">
-                    
+    <div class="container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
                 </div>
-                <div class="cart-total hidden">
-                    <p class="total">TOTAL:</p>
-                    <p class="total-pagar">$0</p>
-                    <a href="pasarela-de-pago.html" class="pagar-btn">BUY NOW!</a>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
                 </div>
-                <p class="cart-empty">The Cart is <b class="void">EMPTY</b> 😔</p>
-            </div>
-        </div>
-    </header>
-
-    <div class="menu">
-        <ion-icon name="close-outline"></ion-icon>
-        <ion-icon name="menu-outline"></ion-icon>
-    </div>
-
-    <div class="barra-lateral">
-        <div>
-            <div class="nombre-pagina">
-                <ion-icon id="logo_menu" name="menu-outline"></ion-icon>
-                <span>GAME HEAVEN</span>
-            </div>
-
-        </div>
-
-        <nav class="navegacion">
-            <ul>
-                <li>
-                    <a href="../index.html">
-                        <ion-icon name="home-outline"></ion-icon>
-                        <span>HOME PAGE</span>
+                <input type="submit" value="Login" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
                     </a>
-                </li>
-                <li>
-
-                    <a href="catalogo.html">
-                        <ion-icon name="copy-outline"></ion-icon>
-                        <span>CATALOG</span>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
                     </a>
-
-                </li>
-                <li>
-
-                    <a href="buzon.html">
-                        <ion-icon name="mail-open-outline"></ion-icon>
-                        <span>CONTACT US</span>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
                     </a>
-
-                </li>
-            </ul>
-        </nav>
-
-        <!--colocar usuario dentro del div de abajo-->
-        <div class="login-link-container">
-            <a href="pages/sign-up-and-log-in.html" class="username">
-                <ion-icon name="add-circle-outline"></ion-icon>
-                <span class="login-text">login</span>
-            </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div><button class="btn" ><a href="catalogo.html" class="btn-color">Back to Main</a></button>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Sign up" class="btn"><button class="btn" ><a href="catalogo.html">Back to Main</a></button>
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
         </div>
-
-
-        <div>
-            <div class="linea"></div>
-
-            <div class="modo-oscuro">
-
-                <div class="info">
-                    <ion-icon name="moon-outline"></ion-icon>
-                    <span>Dark Mode</span>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Sign up</h3>
+                    <p>Be part of the Best of the world.</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
                 </div>
-                <div class="switch">
-                    <div class="base">
-                        <div class="circulo">
-
-                        </div>
-                    </div>
-                </div>
+                <img src="signin.svg" alt="" class="image">
             </div>
-        </div>
-
-    </div>
-    <main>
-        
-<section class="container-login general-container" id="login">
-    <div class="form-container-login">
-    <h2>Inicio de sesion</h2>
-    <form action="" class="loginForm" id="loginForm">
-        <div class="form-group">
-        <input type="email" class="login" placeholder="Email" id="loginEmail">
-        <div class="password-container">
-            <input type="password" class="login" placeholder="Password" id="loginPassword">
-            <button type="button" class="toggle-password" id="toggleLoginPassword"><ion-icon name="eye-outline"></ion-icon></button>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Are you new?</h3>
+                    <p>Be part of the Best.</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="signup.svg" alt="" class="image">
+            </div>
         </div>
     </div>
-        <input type="submit" class="login" id="loginSubmit" value="Login">
-    </form>
-    <p id="loginMessage"></p>
-    <button id="toggleToSignup">No tienes una cuenta aun? <u>REGISTRATE</u></button>
-</div>
-</section>
-<section class="container-signup general-container" id="addUsr">
-    <div class="form-container-sing-up">
-    <h2>Registrarse</h2>
-    <form action="" class="formularioUsr" id="form">
-        <input type="text" placeholder="Name" id="nombre">
-        <input type="text" placeholder="Last name" id="apellido">
-        <input type="email" placeholder="Email" id="email">
-        <div class="password-container">
-            <input type="password" placeholder="Password" id="password">
-            <button type="button" class="toggle-password" id="toggleSignupPassword"><ion-icon name="eye-outline"></ion-icon></button>
-        </div>
-        <div id="password-strength"></div>
-        <input type="submit" id="submit" value="Sing Up">
-    </form>
-    <p id="signupMessage"></p>
-    <button id="toggleToLogin">Ya tienes una cuenta? <u>INCIA SESION</u></button>
-</div>
-</section>
-
-    </main>
-
 </body>
-    
-
-
-
 <script src="../piblic/script/signup_login.js"></script>
     <script src="../piblic/script/login.js"></script>
     <script src="../piblic/script/toggle.js"></script>
@@ -171,6 +106,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="../piblic/script/namelo.js"></script>
+    
 
 
 </html>
