@@ -13,12 +13,13 @@ const cartInfo = document.querySelector('.cart-product')
 const rowProduct = document.querySelector('.row-product')
 const productList = document.querySelector('.container-items')
 
-// VARIABLES
+// VARIABLES Y CONSTANTES
 let allProducts = JSON.parse(localStorage.getItem('cartProducts')) || []; // Recuperar del localStorage
 const valorTotal = document.querySelector('.total-pagar')
 const countProducts = document.querySelector('#contador-productos')
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
+const buyNowBtn = document.querySelector('.pagar-btn')
 
 // Cargar productos al iniciar la página
 document.addEventListener('DOMContentLoaded', () => {
@@ -122,6 +123,16 @@ const showHTML = () => {
         totalOfProducts = totalOfProducts + product.quantity;
 
     });
+
+    // FUNCION Exportar los datos del carrito a la pasarela 
+    buyNowBtn.addEventListener('click',(e) => {
+        e.preventDefault();
+
+        localStorage.setItem('TotalProductosCarrito', totalOfProducts)
+        localStorage.setItem('TotalPrecioCarrito', total)
+
+        window.location.href = 'pasarela-de-pago.html'
+    })
 
     valorTotal.innerText = `$${total}`;
     countProducts.innerText = `${totalOfProducts}`;

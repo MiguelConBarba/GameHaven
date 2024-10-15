@@ -23,6 +23,21 @@ body {
 /*Styles Globales (FINAL)*/
 
 /*Styles Payment (INCIO)*/
+.payment-summary-name{
+  font-weight: 900;
+  color: #000;
+}
+
+.payment-summary-item-quantity{
+  font-weight: 800;
+  color: #000;
+}
+
+.payment-summary-item-price{
+  font-weight: 800;
+  color: #000;
+}
+
 .payment-section {
   padding: 48px 0;
 }
