@@ -30,10 +30,18 @@ canvas {
 }
 
 .snake-container {
+    width: 100px;
     display: flex;
     justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+    align-content: center;
 }
 
 .snake {
     color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-self: center;
+    width: 490px;
 }

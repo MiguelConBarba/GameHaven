@@ -110,6 +110,7 @@ body {
     text-align: left;
     opacity: 1;
     transition: opacity 0.5s ease, width 0.5s ease;
+    
 }
 
 .barra-lateral span.oculto {
@@ -136,8 +137,14 @@ body {
 span, .login-text {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    
 }
 
+.username {
+    text-decoration: none;
+    color: black;
+    
+}
 
 /*nombre de la pagina*/
 .barra-lateral .nombre-pagina {
