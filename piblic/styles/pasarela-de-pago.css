@@ -301,6 +301,7 @@ input:checked + .payment-method-item::before {
   font-weight: 600;
   padding: 16px;
   transition: all 0.15s ease-in-out;
+  position: relative;
 }
 
 .payment-form-submit-button:hover {
@@ -310,6 +311,36 @@ input:checked + .payment-method-item::before {
 
 .payment-form-submit-button > i {
   margin-right: 8px;
+}
+
+.payment-form-submit-button .spinner {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  position: absolute;
+  right: 16px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.payment-form-submit-button.loading {
+  background-color: #1f4a50;
+  cursor: not-allowed;
+}
+
+.payment-form-submit-button.loading .spinner {
+  display: block;
+}
+
+.payment-form-submit-button.loading i,
+.payment-form-submit-button.loading span {
+  visibility: hidden;
 }
 
 .button-back {

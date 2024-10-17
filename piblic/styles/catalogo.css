@@ -49,13 +49,19 @@ main{
   font-weight: 900;
 }
 
-.info-product button{
+.info-product button {
   border: none;
   background: none;
   background-color: #59bd3b;
   color: #fff;
   padding: 15px 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.info-product button:active {
+  transform: scale(1.1); 
+  background-color: #4da332; 
 }
 
 .shop-icon{
