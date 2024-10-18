@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../piblic/style/max-width-pages.css">
     <link rel="icon" href="../piblic/img/logo img/logo-pequeño.png">
     <link rel="stylesheet" href="../piblic/styles/boton-usuario.css">
+    <link rel="stylesheet" href="../piblic/styles/img-gallery.css">
 </head>
 
 <body>
@@ -122,28 +123,53 @@
 
     </div>
 
-    <!--S_L_I_D_E_R:-->
-
-
-    <!-- input-search Después del slider y antes del catálogo -->
-    <div class="search-container">
-        <div class="search-box">
-            <input type="text" id="search-input" placeholder="Buscar...">
-            <button type="button" id="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
-    </div>
-    
-<p class="no-results" id="no-results">
-    😞 No results found...
-</p>
-
-
-
-    <!--catalogo:-->
+   
 <main>
-    <section class="catalogo">
+    
+    <!--MINI GALERIA-->
+
+    <section class="gallery-container">
+        <div class="gallery-overlay">
+          <h2>GAME HEAVEN</h2>
+          <h3>Your gaming paradise</h3>
+          <p class="gallery-description">Enjoy browsing our <b>extensive catalog</b> and get your favorite adventures at the best price</p>
+          <a href="#catalog" class="explore-button">Let's see it!!</a>
+        </div>
+        <section class="gallery">
+          <div class="img-container">
+            <img src="../piblic/img/catalogo img/img-slider/forza-img-slider.webp" alt="" class="img-gallery">
+          </div>
+          <div class="img-container">
+            <img src="../piblic/img/catalogo img/img-slider/RedDead-img-slider.webp" alt="" class="img-gallery">
+          </div>
+          <div class="img-container">
+            <img src="../piblic/img/catalogo img/img-slider/COD-img-slider.webp" alt="" class="img-gallery">
+          </div>
+        </section>
+      </section>
+
+
+ 
+
+
+    <!--CATALOGO-->
+
+    <section class="catalogo" id="catalog">
+             
+        <!-- BUSCADOR -->  
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Buscar...">
+                <button type="button" id="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <p class="no-results" id="no-results">
+                😞 No results found...
+            </p>
+        </div>
+        
+
         <div class="container-items">
             <div class="item">
                 <figure class="container-image">
@@ -157,10 +183,10 @@
             </div>
             <div class="item">
                 <figure>
-                    <img class="product-image" src="../piblic/img/catalogo img/img-tienda/Haloinfinite-img-tienda.png" alt="">
+                    <img class="product-image" src="../piblic/img/catalogo img/img-tienda/RedDead-img-tienda.jfif" alt="">
                 </figure>
                 <div class="info-product">
-                    <p class="name-product">HALO Infinite</p>
+                    <p class="name-product">RDR2</p>
                     <p class="price">$40</p>
                     <button class="btn-add-cart">SHOP NOW!</button>
                 </div>
@@ -403,6 +429,7 @@
     <script src="../piblic/script/namelo.js"></script>
     <script src="../piblic/script/input-search.js"></script>
     <script src="../piblic/script/carrito-en-catalogo.js"></script>
+    <script src="../piblic/script/catalogGallery.js"></script>
 </body>
 
 </html>

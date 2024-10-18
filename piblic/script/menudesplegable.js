@@ -8,6 +8,28 @@ const main = document.querySelectorAll("main");
 const search = document.getElementById("search");
 const noResults = document.querySelector('#no-results');
 
+// Función para plegar la barra lateral
+function plegarBarraLateral() {
+    barralateral.classList.add("mini-barra-lateral");
+    main.forEach((element) => {
+        element.classList.add("min-main");
+    });
+    spans.forEach((span) => {
+        span.classList.add("oculto");
+    });
+    if (menu.children[0].style.display === "block") {
+        menu.children[0].style.display = "none";
+        menu.children[1].style.display = "block";
+    }
+    if (window.innerWidth <= 320) {
+        search.style.visibility = "hidden";
+    }
+}
+
+// Plegar la barra lateral automáticamente después de 5 segundos
+setTimeout(plegarBarraLateral, 5000);
+
+
 // Evento al hacer clic en el menú
 menu.addEventListener("click", () => {
     barralateral.classList.toggle("max-barra-lateral");
