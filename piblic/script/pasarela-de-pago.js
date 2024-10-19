@@ -31,7 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
-  document.getElementById('card-number').addEventListener('input', function () {
+  document.getElementById('email').addEventListener('input', function (e) {
+    e.preventDefault();
+  })
+
+  document.getElementById('card-number').addEventListener('input', function (e) {
+    e.preventDefault();
       this.value = this.value.replace(/\D/g, '');
   
       if (this.value.length > 16) {
@@ -39,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
-  document.getElementById('cvv').addEventListener('input', function () {
+  document.getElementById('cvv').addEventListener('input', function (e) {
+    e.preventDefault();
       this.value = this.value.replace(/\D/g, '');
 
       if (this.value.length > 3) {
