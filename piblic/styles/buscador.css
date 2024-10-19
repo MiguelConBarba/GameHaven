@@ -3,13 +3,13 @@
     width: 100%;
     padding: 60px 0;
     text-align: center;
+    padding-top: 100px;
 }
 
 .search-box {
     position: relative;
     display: inline-block;
     align-items: center;
-    padding-top: 20px;
 }
 
 #search-input {
