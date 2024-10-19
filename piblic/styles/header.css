@@ -10,6 +10,7 @@ header {
     z-index: 3; 
 }
 
+
 .new-login-btn {
     font-size: 16px;
     color: rgb(0, 0, 0);
@@ -199,4 +200,60 @@ header {
   .row-product::-webkit-scrollbar-thumb:hover {
     background-color: #555; 
     margin-right: 5px;
+}
+
+/* Dark mode for header and its elements */
+.dark-mode header {
+    background-color: var(--color-barra-lateral);
+}
+
+.dark-mode .new-login-btn {
+    color: lightgray;
+    border-color: lightgray;
+}
+
+.dark-mode .new-login-btn:hover {
+    background-color: var(--color-boton);
+    color: var(--color-boton-texto);
+}
+
+.dark-mode .icon-cart {
+    stroke: var( --color-switch-circulo);
+}
+
+.dark-mode .count-products {
+    background-color: var(--color-texto-menu);
+    color: var(--color-boton);
+}
+
+.dark-mode .container-cart-products {
+    background-color: var(--color-barra-lateral);
+}
+
+.dark-mode .cart-product {
+    border-bottom: 1px solid var(--color-linea);
+}
+
+.dark-mode .titulo-producto-carrito {
+    color: lightgray;
+}
+
+.dark-mode .cantidad-producto-carrito{
+    color: lightgray;
+}
+
+.dark-mode .total {
+    color: lightgray;
+}
+
+.dark-mode .icon-close{
+    color: lightgrey;
+}
+
+.dark-mode .total-pagar{
+    color: #59bd3b;
+}
+
+.dark-mode .cart-empty{
+    color: lightgray;
 }

@@ -39,7 +39,7 @@ function loop() {
     // Si la serpiente se sale del canvas, el juego termina
     if (snake.x < 0 || snake.x >= canvas.width || snake.y < 0 || snake.y >= canvas.height) {
         gameOver = true;  // Se bloquea el juego
-        alert("¡Has perdido! Presiona REINICIAR para volver a jugar.");
+        alert("You have lost! Press RESET to play again.");
         return;
     }
 
@@ -68,7 +68,7 @@ function loop() {
         for (var i = index + 1; i < snake.celdas.length; i++) {
             if (cell.x === snake.celdas[i].x && cell.y === snake.celdas[i].y) {
                 gameOver = true;  // Se bloquea el juego
-                alert("¡Has perdido! Presiona REINICIAR para volver a jugar.");
+                alert("You have lost! Press RESET to play again.");
                 return;
             }
         }

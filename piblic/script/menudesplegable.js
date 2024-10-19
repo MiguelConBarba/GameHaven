@@ -80,6 +80,17 @@ logo_menu.addEventListener("click", () => {
 palanca.addEventListener("click", () => {
     let body = document.body;
     body.classList.toggle("dark-mode");
-    circulo.classList.toggle("prendido");
+
+    // Toggle class on header elements (login button and cart)
+    const loginBtn = document.querySelector('.new-login-btn');
+    const cartIcon = document.querySelector('.icon-cart');
+    
+    if (body.classList.contains('dark-mode')) {
+        loginBtn.classList.add('dark-mode');
+        cartIcon.classList.add('dark-mode');
+    } else {
+        loginBtn.classList.remove('dark-mode');
+        cartIcon.classList.remove('dark-mode');
+    }
 });
 
