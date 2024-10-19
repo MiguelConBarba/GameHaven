@@ -27,3 +27,4 @@ function getLastItem() {
     }
 }
 getLastItem()
+window.onload = checkLoggedInUser;
